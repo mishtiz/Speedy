@@ -4,17 +4,25 @@
 }
 
 header nav {
-  width: 90%;
-  margin: 10px auto;
+  width: 100%;
   background-color: #2a60ff;
-  border-radius: 5px;
 }
 
 header nav .main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-inline: 20px;
+  /* margin-inline: 20px; */
+  padding: 10px 20px;
+}
+
+.main h3 {
+  color: white;
+  font-family: "Protest Guerrilla", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  font-size: 30px;
 }
 
 header nav img {
@@ -24,17 +32,21 @@ header nav img {
 
 header nav ul {
   display: flex;
-  gap: 20px;
+  gap: 30px;
   color: white;
   list-style: none;
 }
 
 header nav ul li {
-  position: relative;
+  /* position: relative; */
   cursor: pointer;
-  padding: 5px 0;
   font-size: 18px;
   font-weight: 600;
+  transition: text-decoration ease 1s;
+}
+
+header nav ul li:hover{
+  text-decoration: underline;
 }
 
 /* header nav ul li::after {
@@ -64,198 +76,324 @@ header nav .btn {
 
 header nav .btn img {
   display: none;
-  padding: 6px 6px;
+  padding: 6px;
   width: 25px;
   cursor: pointer;
-  transition: background-color ease 0.8s;
+  /* filter: invert(1); */
+  transition: all ease 0.8s;
 }
 
-header nav .btn img:hover {
-  background-color: #ddc514;
+header nav .btn img:active {
+  /* background-color: white;
+  filter:invert(-1); */
+  transform: scale(0.5);
+}
+
+header nav .btn img:active{
+  transform: scale(0.6);
 }
 
 header nav .btn button {
   font-size: 14px;
   padding: 8px 15px;
   outline: none;
-  border: none;
+  border: 1px solid white;
   border-radius: 5px;
+  background: transparent;
   cursor: pointer;
   font-weight: 700;
-  background-color: white;
-  color: black;
-  transition: transform ease 0.7s;
+  color: white;
+  /* background-color: white; */
+  transition: all ease 0.7s;
 }
 
 header nav .btn button:hover {
-  transform: translateY(-3px);
+  /* transform: translateY(-3px); */
+  background-color: white;
+  color: #2a60ff;
 }
 
-header .ser{
-    width: 90%;
-    /* border: 1px solid black; */
-    margin: 0 auto;
-    padding: 10px 0;
+header nav .btn button:active{
+  transform: scale(0.6);
 }
 
-header .ser .search{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 10px;
+header .ser {
+  /* border: 1px solid black; */
+  margin: 0 auto;
+  padding: 10px 0;
 }
 
-header .ser h1{
-    color: black;
-    font-size: 25px;
-    font-weight: 700;
+header .ser .search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10px;
 }
 
-header .ser span input{
-    width: 500px;
-    font-size: 15px;
-    font-weight: 600;
-    outline: none;
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 5px 10px;
-    background-color: rgba(0,0,0,0.1);
-    transition: background-color ease 0.5s;
+header .ser h1 {
+  color: black;
+  font-size: 25px;
+  font-weight: 700;
 }
 
-header .ser span input:focus{
-    background-color: white;
+header .ser span input {
+  width: 500px;
+  font-size: 15px;
+  font-weight: 600;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: background-color ease 0.5s;
 }
 
-header .ser span{
-    display: flex;
-    gap: 10px;
+header .ser span input:focus {
+  background-color: white;
 }
 
-header .ser span input::placeholder{
-    font-size: 15px;
+header .ser span {
+  display: flex;
+  gap: 10px;
 }
 
-header .ser span button{
-    font-size: 15px;
-    padding: 5px 15px;
-    border-radius: 5px;
-    font-weight: 600;
-    color: white;
-    background-color: black;
-    border: none;
-    cursor: pointer;
-    transition: transform ease .5s;
+header .ser span input::placeholder {
+  font-size: 15px;
 }
 
-header .ser span button:active{
-    transform: scale(0.8);
+header .ser span button {
+  font-size: 15px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-weight: 600;
+  color: black;
+  background: transparent;
+  border: 1px solid #2a60ff;
+  /* background-color:#2a60ff; */
+  /* border: none; */
+  cursor: pointer;
+  transition: transform ease 0.5s;
 }
 
-.container{
-    width: 50%;
-    gap: 30px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+header .ser span button:active {
+  transform: scale(0.5);
 }
 
-.container .pre{
-    width: 25px;
-    padding: 10px;
-    transition: all ease 1s;
+header .ser span button:hover {
+  background-color: #2a60ff;
+  color: white;
+  transition: all .9s;
 }
 
-.container .next{
-    width: 25px;
-    padding: 10px;
-    transition: all ease 1s;
+.pan{
+  width: 70%;
+  margin: 10px auto;
 }
 
-.container
-.next:hover{
-    background-color: rgba(0,0,0,0.1);
-    border-radius: 50px;
+.pan img{
+  cursor: pointer;
+  width: 100%;
 }
 
-.container
-.pre:hover{
-    background-color: rgba(0,0,0,0.1);
-    border-radius: 50px;
+.special{
+  width: 70%;
+  margin: 10px auto;
 }
 
-.sliding{
-    width: 100%;
-    /* height: 70vh; */
-    margin: 20px auto;
-    border: 1px solid black;
-    overflow: hidden;
-}
-
-.sliding .slide{
-    display: flex;
-    transition: transform ease 1s;
-}
-
-.sliding .slide .image{
-    width: 100%;
-    /* height: 100%; */
-    object-fit: cover;
+.special img{
+  cursor: pointer;
+  width: 100%;
 }
 
 
+.container {
+  width: 50%;
+  gap: 30px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.container .pre {
+  width: 25px;
+  padding: 10px;
+  transition: all ease 1s;
+}
 
+.container .next {
+  width: 25px;
+  padding: 10px;
+  transition: all ease 1s;
+}
 
+.container .next:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+}
 
+.container .pre:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+}
 
+.sliding {
+  width: 100%;
+  /* height: 70vh; */
+  margin: 20px auto;
+  border: 1px solid black;
+  overflow: hidden;
+}
 
+.sliding .slide {
+  display: flex;
+  transition: transform ease 1s;
+}
 
+.sliding .slide .image {
+  width: 100%;
+  /* height: 100%; */
+  object-fit: cover;
+}
 
+footer {
+  background-color: black;
+}
 
+.foot {
+  padding: 40px 0;
+  width: 80%;
+  height: fit-content;
+  margin: auto;
+  background-color: rgb(14, 13, 13);
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+}
 
+.foot .social {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 
+.foot h2 {
+  color: white;
+  cursor: pointer;
+}
 
+.foot .social span {
+  display: flex;
+  gap: 15px;
+}
 
+.foot .social img {
+  cursor: pointer;
+  width: 25px;
+  transition: transform ease 1s;
+}
 
+.foot .links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 
+.foot .sublink {
+  display: flex;
+  gap: 40px;
+}
 
+.foot .sublink .first-sublink {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
 
+.foot .sublink .first-sublink a {
+  text-decoration: none;
+  font-size: 13px;
+  color: rgba(161, 161, 161, 0.9);
+  transition: color ease 0.5s;
+}
 
+.foot .sublink .first-sublink a:hover {
+  color: white;
+}
 
+.foot .social span img:hover {
+  transform: rotateY(360deg);
+}
 
+.download {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.download span img {
+  /* filter: invert(1); */
+  width: 100px;
+  aspect-ratio: 16/4;
+  border-radius: 5px;
+  object-fit: cover;
+  cursor: pointer;
+}
 
 @media only screen and (max-width: 850px) {
   header nav .main img {
     width: 60px;
   }
 
-  header nav .main ul {
-    display: none;
+  .main{
+    /* position: relative; */
+    overflow: hidden;
+    transition: all ease 1s;
+
   }
 
+  .active {
+    display: flex;
+    position: absolute;
+    width: 35%;
+    height: 50vh;
+    flex-direction: column;
+    background-color: #2a60ff;
+    top: 55px;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px 0px 10px 10px;
+    gap: 50px;
+    transition: all ease 1s;
+    /* margin-top: -500px; */
+  }
+  
+  header nav .main ul {
+    display: none;
+    transition: all ease 1s;
+    /* position: absolute;
+    width: 35%;
+    height: 50vh;
+    flex-direction: column;
+    background-color: #2a60ff;
+    top: 55px;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px 0px 10px 10px;
+    gap: 50px;
+    margin-top: -500px;
+    transition: all ease 1s; */
+  }
+  
   header nav .main .btn img {
     display: block;
     width: 25px;
+    transition: all ease 1s;
   }
 
-  header nav .main .btn{
+  header nav .main .btn {
     gap: 5px;
   }
 
@@ -264,20 +402,59 @@ header .ser span button:active{
     padding: 5px 15px;
     border-radius: 50px;
   }
+
+  header .ser span input {
+    width: 100%;
+  }
+
+  .foot{
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .foot .links{
+    width: 100%;
+  }
+
+  .foot .links .sublink{
+    justify-content: center;
+  }
+
+  .download span{
+    display: flex;
+    gap: 20px;
+  }
+
 }
 
 @media only screen and (max-width: 400px) {
-    header nav .main img {
-        width: 40px;
-      }
-      header nav .main .btn img {
-        width: 12px;
-      }
-      header nav .main .btn button {
-        font-size: 8px;
-        padding: 0px 10px;
-      }
-      header nav .main .btn img {
-        padding: 4px;
-      }
+  header nav .main{
+    padding: 5px;
+  }
+
+  .main h3{
+    font-size: 25px;
+  }
+  header nav .main img {
+    width: 40px;
+  }
+  header nav .main .btn img {
+    width: 20px;
+    padding: 4px;
+  }
+  header nav .main .btn button {
+    font-size: 10px;
+    padding: 5px 10px;
+  }
+
+  header .search{
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  header .search span{
+    width: 100%;
+  }
 }
