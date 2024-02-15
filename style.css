@@ -276,27 +276,32 @@ header .ser span button:hover {
 }
 
 .sliding {
-  width: 100%;
-  /* height: 70vh; */
+  width: 90%;
+  height: 70vh;
+  display: flex;
   margin: 20px auto;
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  border-radius: 10px;
   overflow: hidden;
 }
 
-.sliding .slide {
+.sliding .slide{
   display: flex;
+  height: 100%;
+  width: 100%;
   transition: transform ease 1s;
 }
 
+
 .sliding .slide .image {
-  width: 100%;
-  /* height: 100%; */
+  width: 100vw;
   object-fit: cover;
+  object-position: center;
 }
 
 #section{
-  width: 70%;
-  margin: 60px auto;
+  width: 80%;
+  margin: 30px auto;
 }
 
 #section h2{
@@ -307,12 +312,14 @@ header .ser span button:hover {
 
 .brand-list{
   display: flex;
+  justify-content: space-between;
   gap: 15px;
   margin-bottom: 20px;
+  flex-wrap: wrap;
 }
 
 .brand-list img{
-  width: 200px;
+  width: 180px;
   object-fit: cover;
   aspect-ratio: 2/1;
   border-radius: 17px;
@@ -325,7 +332,7 @@ header .ser span button:hover {
 }
 
 #category{
-  width: 70%;
+  width: 80%;
   margin: 60px auto;
 }
 
@@ -340,10 +347,11 @@ header .ser span button:hover {
   justify-content: space-between;
   gap: 20px;
   margin-bottom: 20px;
+  flex-wrap: wrap;
 }
 
 .category-list img{
-  width: 150px;
+  width: 145px;
   object-fit: cover;
   aspect-ratio: 1/1;
   border-radius: 50%;
@@ -371,6 +379,7 @@ footer {
 }
 
 .foot {
+  flex-wrap: wrap;
   padding: 40px 0;
   width: 80%;
   height: fit-content;
@@ -450,9 +459,9 @@ footer {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 1300px) {
   header nav .main img {
-    width: 60px;
+    width: 180px;
   }
 
   .main {
@@ -461,45 +470,47 @@ footer {
     transition: all ease 1s;
   }
 
-  .active {
-    display: flex;
+  
+  header nav .main .humburger {
+    width: 20%;
+    height: 100%;
     position: absolute;
-    width: 35%;
-    height: 50vh;
+    top: -200%;
+    right: 0%;
+    gap: 35px;
+    padding-top: 40px;
     flex-direction: column;
-    background-color: #2a60ff;
-    top: 55px;
-    right: 0;
-    align-items: center;
+    color: white;
+    border-radius: 0px 0 0 50px;
     justify-content: center;
-    border-radius: 0px 0px 10px 10px;
-    gap: 50px;
-    transition: all ease 1s;
-    /* margin-top: -500px; */
+    align-items: center;
+    z-index: 1;
+    transition: top ease-in-out .8s;
+    background-color: cornflowerblue;
+  }
+  .menu{
+    z-index: 2;
   }
 
-  header nav .main ul {
-    display: none;
-    transition: all ease 1s;
-    /* position: absolute;
-    width: 35%;
-    height: 50vh;
-    flex-direction: column;
-    background-color: #2a60ff;
-    top: 55px;
-    right: 0;
-    align-items: center;
-    justify-content: center;
-    border-radius: 0px 0px 10px 10px;
-    gap: 50px;
-    margin-top: -500px;
-    transition: all ease 1s; */
+  header .ser span{
+    width: 50%;
   }
 
+  .opt{
+    font-size: 12px;
+  }
   header nav .main .btn img {
     display: block;
-    width: 25px;
-    transition: all ease 1s;
+    width: 45px;
+    transition: transform ease 1s;
+  }
+
+  header nav .main .btn img:active{
+    transform: scale(.5);
+  }
+
+  header nav .main .btn button{
+    display: none;
   }
 
   header nav .main .btn {
@@ -516,15 +527,16 @@ footer {
     width: 100%;
   }
 
-  .foot {
-    flex-direction: column;
-    text-align: center;
-    gap: 30px;
-    align-items: center;
+  #section{
+    width: 80%;
   }
 
-  .foot .links {
-    width: 100%;
+  #category{
+    width: 80%;
+  }
+
+  .foot{
+    gap: 30px;
   }
 
   .foot .links .sublink {
@@ -535,9 +547,17 @@ footer {
     display: flex;
     gap: 20px;
   }
+
+  .foot h2{
+    text-align: center;
+  }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 550px) {
+  header nav .main img {
+    width: 150px;
+}
+
   header nav .main {
     padding: 5px;
   }
@@ -545,24 +565,81 @@ footer {
   .main h3 {
     font-size: 25px;
   }
-  header nav .main img {
-    width: 40px;
-  }
   header nav .main .btn img {
-    width: 20px;
+    width: 25px;
     padding: 4px;
   }
-  header nav .main .btn button {
-    font-size: 10px;
-    padding: 5px 10px;
+
+  header nav .main .humburger{
+    width: 50%;
+    padding-top: 0;
+    height: 85vh;
   }
 
-  header .search {
+  header .ser .search{
+    margin-inline: 10px;
     flex-wrap: wrap;
     gap: 10px;
   }
 
+  header .ser img{
+    width: 25px;
+  }
+
   header .search span {
     width: 100%;
+  }
+  header .ser .search .loc #location{
+    font-size: 15px;
+  }
+  header .ser span input{
+    padding: 5px 10px;
+  }
+
+  .container{
+    gap: 0;
+  }
+
+  .sliding {
+    height: 35vh;
+    width: 100%;
+    margin: 5px 0;
+  }
+  #section h2 {
+    font-size: 20px;
+    margin: 30px 0;
+  }
+
+  .brand-list{
+    justify-content: flex-start;
+    margin: 0px;
+  }
+
+  .brand-list img{
+    width: 90px;
+    border-radius: 5px;
+  }
+
+  #category {
+    margin: 30px auto;
+  }
+
+  #category h2{
+    margin: 20px 0;
+    font-size: 20px;
+  }
+
+  .category-list img {
+    width: 125px;
+  }
+
+  .category-list .sublist p{
+    font-size: 12px;
+  }
+  .foot h2{
+    font-size: 15px;
+  }
+  .foot .sublink .first-sublink a{
+    font-size: 10px;
   }
 }
