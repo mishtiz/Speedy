@@ -149,10 +149,10 @@ header .ser .search .loc #location{
   transition: all ease .5s ;
 }
 
-header .ser .search .loc #location:hover{
+/* header .ser .search .loc #location:hover{
   background-color: #2a60ff;
   color: white;
-}
+} */
 
 header .ser .search .loc #location:focus{
   background-color: #2a60ff;
@@ -163,6 +163,7 @@ header .ser .search .loc #location:focus{
   background-color: white;
   color: black;
 }
+
 
 header .ser .search .loc{
   display: flex;

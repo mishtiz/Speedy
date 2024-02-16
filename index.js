@@ -8,10 +8,6 @@ let next = document.querySelector('.next')
 let slidernumber = 1;
 let length = image.length;
 
-slide.forEach((e)=>{
-    console.log(e);
-    
-})
 
 
 setInterval(()=>{
@@ -19,18 +15,16 @@ setInterval(()=>{
         slide[slidernumber].style.transform = `translateX(-${slidernumber*100}%)`;
         slidernumber++;
     }
-    // else if(slidernumber>length)
-    // {
-    //     console.log(slidernumber);
-    //     slide[slidernumber-1].style.transform = `translateX(0%)`;
-    //     third.style.transform = `translateX(0%)`;
-    //     second.style.transform = `translateX(0%)`;
-    //     first.style.transform = `translateX(0%)`;
-    //     slidernumber = 1;
-    //     console.log(slidernumber);
-    //     slidernumber=1;
-    // }
-},5000)
+    else
+    {
+        console.log(slidernumber);
+        slide[slidernumber-1].style.transform = `translateX(0%)`;
+        third.style.transform = `translateX(0%)`;
+        second.style.transform = `translateX(0%)`;
+        first.style.transform = `translateX(0%)`;
+        slidernumber = 1;
+    }
+},4000)
 
 next.addEventListener('click',()=>{
     if(slidernumber<length){
@@ -38,7 +32,10 @@ next.addEventListener('click',()=>{
         slidernumber++;
     }
     else{
-        slide[slidernumber].style.transform = `translateX(0)`;
+        slide[slidernumber-1].style.transform = `translateX(0%)`;
+        third.style.transform = `translateX(0%)`;
+        second.style.transform = `translateX(0%)`;
+        first.style.transform = `translateX(0%)`;
         slidernumber = 1;
     }
 })
@@ -49,10 +46,14 @@ previous.addEventListener('click',()=>{
         slide[slidernumber-1].style.transform = `translateX(-${(slidernumber-2)*100}%)`;
         slidernumber--;
     }
-    else{
-        slide[slidernumber].style.transform = `translateX(-${(length-1)*100}%)`;
-        slidernumber = length;
-    }
+    // else{
+    //     slide[slidernumber].style.transform = `translateX(-${(length-1)*100}%)`;
+    //     first.style.transform = `translateX(-100%)`;
+    //     second.style.transform = `translateX(-200%)`;
+    //     third.style.transform = `translateX(-300%)`;
+    //     slide[4].style.transform = `translateX(-400%)`;
+    //     slidernumber = length;
+    // }
 })
 
 
