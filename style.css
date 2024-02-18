@@ -284,6 +284,7 @@ h4 {
   color: black;
 }
 
+
 .mens-category img {
   width: 100%;
   aspect-ratio: 1/1;
@@ -304,7 +305,7 @@ h4 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px 50px;
+  gap: 20px 25px;
   margin: 20px 0 60px 0;
 }
 
@@ -314,15 +315,23 @@ h4 {
 }
 
 .tshirt-list {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* gap: 5px; */
   width: 15%;
   padding: 5px;
   /* box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1); */
   /* padding: 10px; */
   transition: transform ease-in-out 0.5s;
   cursor: pointer;
+}
+
+.tshirt-list a {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-decoration: none;
+  color: black;
 }
 
 .tshirt-list:hover {
@@ -340,8 +349,17 @@ h4 {
   font-weight: 600;
 }
 
-.t-shirts .name {
+ .name {
   color: rgba(0, 0, 0, 0.7);
+  font-weight: 500;
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.mens-category .name {
+  /* color: rgba(0, 0, 0, 0.7); */
   font-weight: 500;
   width: 100%;
   text-overflow: ellipsis;
@@ -354,7 +372,7 @@ h4 {
   /* font-weight: 50; */
 }
 
-.tshirt-list .dis {
+.dis {
   color: #2a60ff;
 }
 
@@ -541,6 +559,120 @@ h2 {
   font-size: 14px;
   font-weight: 600;
 }
+
+.row{
+  width: 80%;
+  margin: 20px auto;
+  display: flex;
+  /* justify-content: center; */
+  gap: 50px;
+}
+
+.col1{
+  width: 100%;
+}
+.col1 img{
+  /* width: 100%; */
+  /* aspect-ratio: 1/1;
+  object-fit: cover; */
+  object-position: top;
+}
+
+.col1 .gallary{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.col1 .gallary .img1{
+  flex-basis: 24%;
+
+}
+
+.col2{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.col2 h5{
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.col2 .name{
+  font-size: 20px;
+  opacity: .5;
+}
+
+.col2 .dis{
+  font-size: 15px;
+}
+
+.col2 .mrp{
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.col2 s{
+  color: rgba(0, 0, 0, 0.5);
+  opacity: .5;
+}
+
+.col2 h6{
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.col2 ul{
+  margin: 10px 0 0 20px
+}
+
+.col2 ul li{
+  padding: 5px 0;
+}
+
+.col2 span p{
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.col2 select{
+  width: fit-content;
+  padding: 5px;
+  border: 1px solid #2a60ff;
+  font-size: 15px;
+  /* font-weight: 600; */
+}
+
+select:focus{
+  outline: none;
+}
+
+.col2 button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  border: none;
+  background-color: #2a60ff;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 40px;
+  font-size: 20px;
+}
+
+.col2 button img{
+  width: 20px;
+}
+
+.col2 button:hover{
+  background-color: #2295e8;
+}
+
 
 footer {
   background-color: black;
@@ -739,6 +871,126 @@ footer {
   }
 }
 
+@media only screen and (max-width: 1000px){
+  .mens-category .name{
+    font-size: 15px;
+    margin: 5px 0;
+    font-weight: 500;
+  }
+  .mens-category h5{
+    font-size: 18px;
+  }
+
+  .mens-category p{
+    font-size: 15px;
+    margin: 5px 0;
+  }
+  .col2 h5{
+    font-size: 25px;
+  }
+
+  .col2 .name{
+    font-size: 15px;
+  }
+
+  .col2 .dis{
+    font-size: 13px;
+  }
+
+  .col2 .mrp{
+    font-size: 15px;
+  }
+
+  .col2 button{
+    font-size: 15px;
+  }
+
+  .col2 h6{
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 850px){
+  .tshirt-list{
+    width: 40%;
+  }
+
+  .tshirt-category{
+    justify-content: space-between;
+    gap: 10px 0;
+  }
+  .col2 h5{
+    font-size: 18px;
+  }
+
+  .col2 .name{
+    font-size: 15px;
+  }
+
+  .col2 .dis{
+    font-size: 12px;
+  }
+
+}
+
+@media only screen and (max-width: 700px){
+
+  .mens-category{
+    width: 150px;
+  }
+
+  .mens-wear-list{
+    justify-content: center;
+    gap: 10px 20px;
+  }
+
+  .mens-category .name{
+    font-size: 12px;
+  }
+
+  .mens-category h5{
+    font-size: 14px;
+  }
+
+  .mens-category p{
+    font-size: 12px;
+    margin: 5px 0;
+  }
+
+  .row{
+    gap: 20px;
+  }
+
+  .col2{
+    gap: 10px;
+  }
+
+  .col2 h5{
+    font-size: 18pxpx;
+  }
+
+  .col2 .name{
+    font-size: 12px;
+  }
+
+  .col2 .dis{
+    font-size: 12px;
+  }
+
+  .col2 .mrp{
+    font-size: 15px;
+  }
+
+  .col2 button{
+    font-size: 13px;
+  }
+
+  .col2 h6{
+    font-size: 13px;
+  }
+
+}
+
 @media only screen and (max-width: 550px) {
   header nav .main img {
     width: 120px;
@@ -842,6 +1094,78 @@ footer {
   .deal-sublist p {
     font-size: 12px;
     text-align: center;
+  }
+
+  .mens-wear-list{
+    gap: 10px;
+  }
+
+  .mens-category{
+    width: 115px;
+  }
+
+   h4{
+    font-size: 25px;
+    padding: 15px 0;
+  }
+
+  .mens-category h5{
+    font-size: 12px;
+  }
+
+  .tshirt-list h5{
+    font-size: 13px;
+  }
+
+  .row{
+    flex-direction: column;
+  }
+
+  .col2{
+    gap: 15px;
+  }
+
+  .col2 h5{
+    font-size: 20px;
+  }
+
+  .col2 .name{
+    font-size: 15px;
+  }
+
+  .col2 .dis{
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .col2 .mrp{
+    font-size: 18px;
+  }
+
+  .col2 select{
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .col2 button{
+    padding: 10px 20px;
+  }
+
+  .col2 button img{
+    width: 20px;
+  }
+
+  .col2 button p{
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .col2 h6{
+    font-size: 18px;
+  }
+
+  .col2 ul li{
+    font-size: 12px;
   }
 
   .foot h3 {
