@@ -284,7 +284,6 @@ h4 {
   color: black;
 }
 
-
 .mens-category img {
   width: 100%;
   aspect-ratio: 1/1;
@@ -349,7 +348,7 @@ h4 {
   font-weight: 600;
 }
 
- .name {
+.name {
   color: rgba(0, 0, 0, 0.7);
   font-weight: 500;
   width: 100%;
@@ -442,8 +441,6 @@ header .women-img {
 header .women-img img {
   width: 100%;
   height: 500px;
-  
- 
 }
 
 h2 {
@@ -571,7 +568,7 @@ h2 {
   font-weight: 600;
 }
 
-.row{
+.row {
   width: 80%;
   margin: 20px auto;
   display: flex;
@@ -579,78 +576,77 @@ h2 {
   gap: 50px;
 }
 
-.col1{
+.col1 {
   width: 100%;
 }
-.col1 img{
+.col1 img {
   /* width: 100%; */
   /* aspect-ratio: 1/1;
   object-fit: cover; */
   object-position: top;
 }
 
-.col1 .gallary{
+.col1 .gallary {
   display: flex;
   justify-content: space-between;
   margin: 10px 0;
   cursor: pointer;
 }
 
-.col1 .gallary .img1{
+.col1 .gallary .img1 {
   flex-basis: 24%;
-
 }
 
-.col2{
+.col2 {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.col2 h5{
+.col2 h5 {
   font-size: 30px;
   font-weight: 600;
 }
 
-.col2 .name{
+.col2 .name {
   font-size: 20px;
-  opacity: .5;
+  opacity: 0.5;
 }
 
-.col2 .dis{
+.col2 .dis {
   font-size: 15px;
 }
 
-.col2 .mrp{
+.col2 .mrp {
   font-size: 18px;
   font-weight: 600;
 }
 
-.col2 s{
+.col2 s {
   color: rgba(0, 0, 0, 0.5);
-  opacity: .5;
+  opacity: 0.5;
 }
 
-.col2 h6{
+.col2 h6 {
   font-size: 18px;
   font-weight: 600;
 }
 
-.col2 ul{
-  margin: 10px 0 0 20px
+.col2 ul {
+  margin: 10px 0 0 20px;
 }
 
-.col2 ul li{
+.col2 ul li {
   padding: 5px 0;
 }
 
-.col2 span p{
+.col2 span p {
   font-size: 14px;
   margin: 10px 0;
 }
 
-.col2 select{
+.col2 select {
   width: fit-content;
   padding: 5px;
   border: 1px solid #2a60ff;
@@ -658,11 +654,15 @@ h2 {
   /* font-weight: 600; */
 }
 
-select:focus{
+select:focus {
   outline: none;
 }
 
-.col2 button{
+.col2 a {
+  text-decoration: none;
+}
+
+.col2 button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -674,16 +674,185 @@ select:focus{
   border-radius: 5px;
   padding: 10px 40px;
   font-size: 20px;
+  cursor: pointer;
+  transition: all ease-in-out 0.2s;
 }
 
-.col2 button img{
+.col2 button img {
   width: 20px;
 }
 
-.col2 button:hover{
+.col2 button:hover {
   background-color: #2295e8;
 }
 
+.col2 button:active {
+  transform: scale(0.9);
+}
+
+.btn .on {
+  background-color: white;
+  color: #2a60ff;
+}
+
+/* Cart Sectionn */
+
+.cart {
+  /* height: 100vh; */
+  width: 70%;
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  margin: 20px auto;
+  gap: 10px;
+}
+
+.box1 {
+  width: 70%;
+  display: flex;
+  height: fit-content;
+  flex-direction: column;
+  gap: 10px; 
+}
+
+
+
+
+.upper{
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  gap: 0 20px;
+  /* flex-direction: column; */
+}
+
+.picture img{
+  width: 150px;
+  /* height: 150px; */
+  object-fit: cover;
+  object-position: top;
+}
+
+.detail{
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.detail h6{
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.detail .price{
+  font-size: 14px;
+  opacity: .5;
+}
+
+.detail p{
+  font-size: 16px;
+  font-weight: 550;
+  /* opacity: .7; */
+}
+
+.mr{
+  /* font-size: 18px; */
+  font-weight: 600;
+  opacity: 10;
+}
+
+.detail span{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.detail span h5{
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.detail span input{
+  width: 30px;
+  text-align: center;
+  padding: 0px 5px;
+  font-size: 15px;
+  outline: none;
+}
+
+.detail a{
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.detail a:hover{
+  color: #2a60ff;
+}
+
+.box2{
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  width: 30%; 
+  gap: 10px;
+}
+
+.box2 .line{
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 1px;
+  margin: 5px 0;
+}
+
+.box2 h1{
+  font-size: 20px;
+  font-weight: 600;
+  padding: 5px 10px 0 10px;
+}
+
+.box2 span{
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+}
+
+.box2 h3,p{
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.container{
+  width: 100%;
+  display: flex;
+  /* border: 1px solid black; */
+  justify-content: end;
+  padding: 10px 0;
+}
+
+.container button{
+  font-size: 20px;
+  padding: 10px 25px;
+  font-weight: 500;
+  background-color: #2a60ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all ease-in-out .2s;
+}
+
+.container button:hover{
+  background-color: #2295e8;
+}
+
+.container button:active{
+  transform: scale(.9);
+}
+
+
+/* Cart Section end */
 
 footer {
   background-color: black;
@@ -882,124 +1051,174 @@ footer {
   }
 }
 
-@media only screen and (max-width: 1000px){
-  .mens-category .name{
+@media only screen and (max-width: 1000px) {
+  .mens-category .name {
     font-size: 15px;
     margin: 5px 0;
     font-weight: 500;
   }
-  .mens-category h5{
+  .mens-category h5 {
     font-size: 18px;
   }
 
-  .mens-category p{
+  .mens-category p {
     font-size: 15px;
     margin: 5px 0;
   }
-  .col2 h5{
+  .col2 h5 {
     font-size: 25px;
   }
 
-  .col2 .name{
+  .col2 .name {
     font-size: 15px;
   }
 
-  .col2 .dis{
+  .col2 .dis {
     font-size: 13px;
   }
 
-  .col2 .mrp{
+  .col2 .mrp {
     font-size: 15px;
   }
 
-  .col2 button{
+  .col2 button {
     font-size: 15px;
   }
 
-  .col2 h6{
+  .col2 h6 {
     font-size: 15px;
   }
+
+  .cart{
+    width: 90%;
+    gap: 25px;
+  }
+
 }
 
-@media only screen and (max-width: 850px){
-  .tshirt-list{
+@media only screen and (max-width: 850px) {
+  .tshirt-list {
     width: 40%;
   }
 
-  .tshirt-category{
+  .tshirt-category {
     justify-content: space-between;
     gap: 10px 0;
   }
-  .col2 h5{
+  .col2 h5 {
     font-size: 18px;
   }
 
-  .col2 .name{
+  .col2 .name {
     font-size: 15px;
   }
 
-  .col2 .dis{
+  .col2 .dis {
     font-size: 12px;
   }
-
 }
 
-@media only screen and (max-width: 700px){
-
-  .mens-category{
+@media only screen and (max-width: 700px) {
+  .mens-category {
     width: 150px;
   }
 
-  .mens-wear-list{
+  .mens-wear-list {
     justify-content: center;
     gap: 10px 20px;
   }
 
-  .mens-category .name{
+  .mens-category .name {
     font-size: 12px;
   }
 
-  .mens-category h5{
+  .mens-category h5 {
     font-size: 14px;
   }
 
-  .mens-category p{
+  .mens-category p {
     font-size: 12px;
     margin: 5px 0;
   }
 
-  .row{
+  .row {
     gap: 20px;
   }
 
-  .col2{
+  .col2 {
     gap: 10px;
   }
 
-  .col2 h5{
+  .col2 h5 {
     font-size: 18pxpx;
   }
 
-  .col2 .name{
+  .col2 .name {
     font-size: 12px;
   }
 
-  .col2 .dis{
+  .col2 .dis {
     font-size: 12px;
   }
 
-  .col2 .mrp{
+  .col2 .mrp {
     font-size: 15px;
   }
 
-  .col2 button{
+  .col2 button {
     font-size: 13px;
   }
 
-  .col2 h6{
+  .col2 h6 {
     font-size: 13px;
   }
 
+  .box1{
+    gap: 20px;
+  }
+  
+  .picture img{
+    width: 120px;
+  }
+
+  .detail h6{
+    font-size: 15px;
+  }
+
+  .detail p{
+    font-size: 13px;
+  }
+
+  .detail span h5{
+    font-size: 13px;
+  }
+
+  .detail span input{
+    font-size: 13px;
+    text-align: left;
+    width: 20px;
+    padding: 2px 5px;
+  }
+
+  .detail a{
+    font-size: 12px;
+  }
+
+  .box2{
+    gap: 5PX;
+  }
+
+  .box2 h1{
+    font-size: 15px;
+  }
+
+  .box2 h3,p{
+    font-size: 13px;
+  }
+
+  .container button{
+    font-size: 15px;
+  }
 }
 
 @media only screen and (max-width: 550px) {
@@ -1107,75 +1326,75 @@ footer {
     text-align: center;
   }
 
-  .mens-wear-list{
+  .mens-wear-list {
     gap: 10px;
   }
 
-  .mens-category{
+  .mens-category {
     width: 115px;
   }
 
-   h4{
+  h4 {
     font-size: 25px;
     padding: 15px 0;
   }
 
-  .mens-category h5{
+  .mens-category h5 {
     font-size: 12px;
   }
 
-  .tshirt-list h5{
+  .tshirt-list h5 {
     font-size: 13px;
   }
 
-  .row{
+  .row {
     flex-direction: column;
   }
 
-  .col2{
+  .col2 {
     gap: 15px;
   }
 
-  .col2 h5{
+  .col2 h5 {
     font-size: 20px;
   }
 
-  .col2 .name{
+  .col2 .name {
     font-size: 15px;
   }
 
-  .col2 .dis{
+  .col2 .dis {
     font-size: 15px;
     font-weight: 500;
   }
 
-  .col2 .mrp{
+  .col2 .mrp {
     font-size: 18px;
   }
 
-  .col2 select{
+  .col2 select {
     font-size: 15px;
     font-weight: 500;
   }
 
-  .col2 button{
+  .col2 button {
     padding: 10px 20px;
   }
 
-  .col2 button img{
+  .col2 button img {
     width: 20px;
   }
 
-  .col2 button p{
+  .col2 button p {
     font-size: 15px;
     font-weight: 600;
   }
 
-  .col2 h6{
+  .col2 h6 {
     font-size: 18px;
   }
 
-  .col2 ul li{
+  .col2 ul li {
     font-size: 12px;
   }
 
@@ -1185,4 +1404,48 @@ footer {
   .foot .sublink .first-sublink a {
     font-size: 10px;
   }
+
+  .cart{
+    flex-direction: column;
+  }
+
+  .box1{
+    width: 100%;
+  }
+
+  .picture img{
+    width: 125px;
+    height: 150px;
+    object-fit: cover;
+  }
+
+  .container button{
+    font-size: 18px;
+  }
+
+  .box2{
+    width: 100%;
+  }
+
+  .box2 h1{
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .detail{
+    gap: 5px;
+  }
+
+  .detail p{
+    font-size: 12px;
+  }
+
+ .detail .price{
+    font-size: 12px;
+  }
+
+  .container button{
+    font-size: 13px;
+  }
+
 }
