@@ -15,7 +15,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="cart.js">
 </head>
 
 <body>
@@ -35,13 +34,13 @@
                     <li><a href="index-grocery.html">Grocery</a></li>
                     <li><a href="index-offer.html">Offers</a></li>
                 </ul>
-                <<div class="btn">
+                <div class="btn">
                     <a href="sign.html">
-                        <button type="submit">Sign up</button>
+                        <button type="submit" class="on">Sign up</button>
                     </a>
                     <!-- <button type="submit">Log-in</button> -->
                     <a href="cart.html">
-                        <button type="submit" class="on">Cart</button>
+                        <button type="submit">Cart</button>
                     </a>
                     <a href="sign.html">
                         <img src="signin.svg" alt="">
@@ -77,127 +76,58 @@
             </div>
         </div>
     </header>
-    <section class="cart">
 
-        <div class="box1">
-            <div class="column">
-                <div class="upper">
-                    <div class="picture">
-                        <img src="https://images.bewakoof.com/t1080/men-s-stubborn-orange-oversized-heavyweight-t-shirt-497518-1656139545-1.jpg"
-                            alt="">
+    <section class="signup-form">
+        <div class="container-sign">
+            <div class="login form">
+                <h1>Sign up</h1>
+                <form action="#">
+                    <div class="main-input">
+                        <div class="input">
+                            <input type="email" placeholder="E-MAIL">
+                            <span><img src="mail.svg" alt=""></span>
+                        </div>
+                        <div class="input">
+                            <input type="text" placeholder="USERNAME">
+                            <span><img src="user.svg" alt=""></span>
+                        </div>
+                        <div class="input">
+                            <input type="password" placeholder="PASSWORD">
+                            <span><img src="password.svg" alt=""></span>
+                        </div>
+                        <div class="rem">
+                            <label><input type="checkbox">I agree to the terms & conditions</label>
+                        </div>
+                        <button type="submit" class="btn2">Register</button>
+                        <div class="reg">
+                            <p>Already have an account?<a href="#" class="log-link"> Login</a></p>
+                        </div>
                     </div>
-                    <div class="detail">
-                        <h6>Bewakoof</h6>
-                        <p>Men's Orange Super Loose Fit T-shirt</p>
-                        <p>size : L</p>
-                        <span>
-                            <s class="price">RS.899</s>
-                            <p>RS.499</p>
-                            <p class="dis">(44% OFF)</p>
-                        </span>
-                        <span>
-                            <h5>QTY :</h5>
-                            <input type="number" value="1">
-                        </span>
-                        <a href="#">REMOVE</a>
+                </form>
+            </div>
+            <div class="login register">
+                <h1>Login</h1>
+                <form action="#">
+                    <div class="main-input">
+                    <div class="input">
+                        <input type="text" placeholder="USERNAME">
+                        <span><img src="user.svg" alt=""></span>
+                    </div>
+                    <div class="input">
+                        <input type="password" placeholder="PASSWORD">
+                        <span><img src="password.svg" alt=""></span>
+                    </div>
+                    <div class="rem">
+                        <label><input type="checkbox">Remember me</label>
+                        <a href="#">Forget Password</a>
+                    </div>
+                    <button type="submit" class="btn2">Login</button>
+                    <div class="reg">
+                        <p>Don't have an account?<a href="#" class="reg-link">Register</a></p>
                     </div>
                 </div>
+                </form>
             </div>
-            <div class="column">
-                <div class="upper">
-                    <div class="picture">
-                        <img src="https://assets.ajio.com/medias/sys_master/root/20220520/FkRL/62870b64aeb26921afaed962/-473Wx593H-469194187-white-MODEL.jpg"
-                            alt="">
-                    </div>
-                    <div class="detail">
-                        <h6>Redtape</h6>
-                        <p>Polo T-shirt with Ribbed Hem</p>
-                        <p>size : L</p>
-                        <span>
-                            <s class="price">RS.2599</s>
-                            <p>RS.598</p>
-                            <p class="dis">(77% OFF)</p>
-                        </span>
-                        <span>
-                            <h5>QTY :</h5>
-                            <input type="number" value="1">
-                        </span>
-                        <a href="#">REMOVE</a>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="upper">
-                    <div class="picture">
-                        <img src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/8938969/2019/4/1/7baf6c58-071a-4b88-a33a-7f0388809e161554110862004-Roadster-Men-Tshirts-8061554110861042-1.jpg"
-                            alt="">
-                    </div>
-                    <div class="detail">
-                        <h6>Roadstar</h6>
-                        <p>Graphic Pure Cotton T-shirt</p>
-                        <p>size : L</p>
-                        <span>
-                            <s class="price">RS.999</s>
-                            <p>RS.309</p>
-                            <p class="dis">(69% OFF)</p>
-                        </span>
-                        <span>
-                            <h5>QTY :</h5>
-                            <input type="number" value="1">
-                        </span>
-                        <a href="#">REMOVE</a>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="upper">
-                    <div class="picture">
-                        <img src="https://assets.ajio.com/medias/sys_master/root/20230812/bpEp/64d77730eebac147fcc4f16c/-473Wx593H-466428340-black-MODEL.jpg"
-                            alt="">
-                    </div>
-                    <div class="detail">
-                        <h6>BULLMER</h6>
-                        <p>Loose Fit Graphic Print Round-Neck T-Shirt</p>
-                        <p>size : L</p>
-                        <span>
-                            <s class="price">RS.1400</s>
-                            <p>RS.298</p>
-                            <p class="dis">(80% OFF)</p>
-                        </span>
-                        <span>
-                            <h5>QTY :</h5>
-                            <input type="number" value="1">
-                        </span>
-                        <a href="#">REMOVE</a>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <button class="order">Place Order</button>
-            </div>
-        </div>
-
-        <div class="box2">
-            <h1>Price Details</h1>
-            <div class="line"></div>
-            <span>
-                <h3>Price</h3>
-                <p>RS.1704</p>
-            </span>
-            <span>
-                <h3>Discount</h3>
-                <p class="dis">RS.4193</p>
-            </span>
-            <span>
-                <h3>Dilivery Charges</h3>
-                <p>RS.40</p>
-            </span>
-            <div class="line"></div>
-            <span>
-                <h3>Total Amount</h3>
-                <p>RS.1744</p>
-            </span>
-            <div class="line"></div>
         </div>
     </section>
 
@@ -259,7 +189,6 @@
             </div>
         </div>
     </footer>
-
     <script>
         let humburger = document.querySelector('.humburger');
         let menu = document.querySelector('.menu');
@@ -274,13 +203,21 @@
                 humburger.style.top = "-200%";
                 check = 0;
             }
+            // humburger.classList.toggle('active');
         })
 
-        let order = document.querySelector('.order');
-        order.addEventListener('click',()=>{
-            alert("Your Order has been Placed")
-        })
-        
+        const container = document.querySelector(".container-sign");
+        const loginlink = document.querySelector(".log-link");
+        const registerlink = document.querySelector(".reg-link");
+        loginlink.addEventListener("click", () => {
+            console.log('hello');
+            container.classList.add('focus');
+        });
+
+        registerlink.addEventListener("click", () => {
+
+            container.classList.remove('focus');
+        });
 
     </script>
 </body>

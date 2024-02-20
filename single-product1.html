@@ -97,7 +97,7 @@
                     </div>
                 </div>
                 <div class="col2">
-                    <h5>Redtape</h5>
+                    <h5 class="brand">Redtape</h5>
                     <p class="name">Polo T-shirt with Ribbed Hem</p>
                     <p class="dis">MRP <s>RS.2599</s> (77% off)</p>
                     <p class="mrp">RS.598.00 </p>
@@ -109,7 +109,7 @@
                         <option value="">XL</option>
                         <option value="">XXL</option>
                     </select>
-                    <button type="submit">
+                    <button class="btn1" type="submit" onclick="goto(this)" value="cart.html">
                         <img src="cart.svg" alt="">
                         <p> Add to Cart</p>
                     </button>
@@ -254,7 +254,6 @@
         </div>
     </footer>
 
-
     <script>
         let humburger = document.querySelector('.humburger');
         let menu = document.querySelector('.menu');
@@ -269,7 +268,6 @@
                 humburger.style.top = "-200%";
                 check = 0;
             }
-            // humburger.classList.toggle('active');
         })
 
         let primary_image = document.querySelector('#main-image')
@@ -282,6 +280,10 @@
             })
 
         })
+
+        function goto(e) {
+            window.open(e.value)
+        }
     </script>
 </body>
 

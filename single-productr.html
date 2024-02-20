@@ -109,7 +109,7 @@
                         <option value="">XL</option>
                         <option value="">XXL</option>
                     </select>
-                    <button type="submit">
+                    <button class="btn1" type="submit" onclick="goto(this)" value="cart.html">
                         <img src="cart.svg" alt="">
                         <p> Add to Cart</p>
                     </button>
@@ -282,6 +282,10 @@
             })
 
         })
+
+        function goto(e) {
+            window.open(e.value)
+        }
     </script>
 </body>
 
