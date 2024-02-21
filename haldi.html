@@ -73,7 +73,7 @@
     </header>
     
     <section>
-        <div class="t-shirts">
+        <!-- <div class="t-shirts">
             <h4>BEST OUTFIT FOR HALDI</h4>
             <div class="haldi-category">
                 <div class="haldi-list">
@@ -84,6 +84,69 @@
                     <p>RS.598.00 </p>
                 </div>
                 
+            </div>
+        </div> -->
+
+        <div class="single-product">
+            <div class="row">
+                <div class="col1">
+                    <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/22824624/2023/4/28/3039a9b8-753c-4fbc-b7cd-a29003ee00ec1682678036159-Navibhu-Yellow-Bandhani-Printed-Straight-Kurta-Palazzo-With--1.jpg"
+                        alt="" width="100%" id="main-image">
+                    <div class="gallary">
+                        <div class="img1">
+                            <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/22824624/2023/4/28/3039a9b8-753c-4fbc-b7cd-a29003ee00ec1682678036159-Navibhu-Yellow-Bandhani-Printed-Straight-Kurta-Palazzo-With--1.jpg"
+                                alt="" width="100%" id="secondary-image">
+                        </div>
+                        <div class="img1">
+                            <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/22824624/2023/4/28/64b912d2-1fc6-4b11-9953-549ad05e57101682678036103-Navibhu-Yellow-Bandhani-Printed-Straight-Kurta-Palazzo-With--5.jpg"
+                                alt="" width="100%" id="secondary-image">
+                        </div>
+                        <div class="img1">
+                            <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/22824624/2023/4/28/5c8a7084-1931-4e0e-9c49-8537f4e947dc1682678036078-Navibhu-Yellow-Bandhani-Printed-Straight-Kurta-Palazzo-With--7.jpg"
+                                alt="" width="100%" id="secondary-image">
+                        </div>
+                        <div class="img1">
+                            <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/22824624/2023/4/28/d1abe48b-0edc-4bc4-b27c-e0309e2af9981682678036131-Navibhu-Yellow-Bandhani-Printed-Straight-Kurta-Palazzo-With--3.jpg"
+                                alt="" width="100%" id="secondary-image">
+                        </div>
+                    </div>
+                </div>
+                <div class="col2">
+                    <h5 class="brand">Anouk</h5>
+                    <p class="name">Women Yellow Floral Printed Regular Kurta with Sharara</p>
+                    <p class="dis">MRP <s>RS.5299</s> (77% off)</p>
+                    <p class="mrp">RS.1599.00 </p>
+                    <select>
+                        <option value="">Select size</option>
+                        <option value="">XS</option>
+                        <option value="">Small</option>
+                        <option value="">Medium</option>
+                        <option value="">Large</option>
+                        <option value="">XL</option>
+                        <option value="">XXL</option>
+                    </select>
+                    <button class="btn1" type="submit" onclick="goto(this)" value="cart.html">
+                        <img src="cart.svg" alt="">
+                        <p> Add to Cart</p>
+                    </button>
+                    <span>
+                        <h6>Product Details</h6>
+                        <ul>
+                            <li>Yellow printed Kurta with Sharara with dupatta</li>
+                            <li>Floral printed</li>
+                            <li>Straight shape</li>
+                            <li>Regular style</li>
+                            <li>V-neck, three-quarter regular sleeves</li>
+                            <li>Calf length length with straight hem</li>
+                            <li>Cotton blend machine weave fabric</li>
+                            <li>Solid Sharara</li>
+                            <li>Partially elasticated waistband</li>
+                            <li>Slip-on closure</li>
+                        </ul>
+
+                    </span>
+
+                </div>
             </div>
         </div>
     </section>
@@ -145,6 +208,38 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        let humburger = document.querySelector('.humburger');
+        let menu = document.querySelector('.menu');
+        let check = 0;
+
+        menu.addEventListener("click", () => {
+            if (check == 0) {
+                humburger.style.top = "0";
+                check = 1;
+            }
+            else {
+                humburger.style.top = "-200%";
+                check = 0;
+            }
+        })
+
+        let primary_image = document.querySelector('#main-image')
+        let secondary_image = document.querySelectorAll('#secondary-image');
+
+        secondary_image.forEach((e) => {
+            console.log(e);
+            e.addEventListener('click', () => {
+                primary_image.src = e.src;
+            })
+
+        })
+
+        function goto(e) {
+            window.open(e.value)
+        }
+    </script>
 
 
 </body>
