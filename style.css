@@ -377,8 +377,8 @@ h4 {
 
 .container {
   width: 100%;
-  gap: 30px;
-  margin: auto;
+  /* gap: 10px;
+  margin: auto; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -407,18 +407,18 @@ h4 {
 }
 
 .sliding {
-  width: 90%;
-  height: 70vh;
+  width: 100%;
+  height: auto;
   display: flex;
   margin: 20px auto;
   /* border: 1px solid black; */
-  border-radius: 10px;
+  /* border-radius: 10px; */
   overflow: hidden;
 }
 
 .sliding .slide {
   display: flex;
-  height: 100%;
+  height: fit-content;
   width: 100%;
   transition: transform ease 1s;
 }
@@ -838,13 +838,6 @@ select:focus {
   font-size: 15px;
 }
 
-.container{
-  width: 100%;
-  display: flex;
-  /* border: 1px solid black; */
-  justify-content: end;
-  padding: 10px 0;
-}
 
 .container button{
   font-size: 20px;
@@ -1562,7 +1555,7 @@ footer {
   }
 
   .sliding {
-    height: 35vh;
+    height: fit-content;
     width: 100%;
     margin: 5px 0;
   }
