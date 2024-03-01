@@ -1248,8 +1248,8 @@ footer {
   }
 
   header nav .main .humburger {
-    width: 20%;
-    height: 100%;
+    width: 40%;
+    height: 80vh;
     position: absolute;
     top: -200%;
     right: 0%;
@@ -1424,35 +1424,56 @@ footer {
   }
 
   .row {
-    gap: 20px;
+    width: 90%;
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  .col1{
+    width: 100%;
   }
 
   .col2 {
-    gap: 10px;
+    width: 100%;
+    gap: 15px;
   }
 
   .col2 h5 {
-    font-size: 18pxpx;
+    font-size: 30px;
   }
 
   .col2 .name {
-    font-size: 12px;
+    font-size: 18px;
   }
 
   .col2 .dis {
-    font-size: 12px;
-  }
-
-  .col2 .mrp {
     font-size: 15px;
   }
 
-  .col2 button {
-    font-size: 13px;
+  .col2 .mrp {
+    font-size: 20px;
+  }
+
+  .col2 button{
+    padding: 15px 30px;
+  }
+
+
+  .col2 button p{
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .col2 button img{
+    width: 25px;
   }
 
   .col2 h6 {
-    font-size: 13px;
+    font-size: 20px;
+  }
+
+  .col2 span p{
+    font-size: 15px;
   }
 
   .box1{
@@ -1634,11 +1655,17 @@ footer {
   }
 
   .row {
+    width: 90%;
     flex-direction: column;
   }
 
+  .col1{
+    width: 100%;
+  }
+
   .col2 {
-    gap: 15px;
+    width: 100%;
+    gap: 18px;
   }
 
   .col2 h5 {
@@ -1664,7 +1691,7 @@ footer {
   }
 
   .col2 button {
-    padding: 10px 20px;
+    padding: 15px 20px;
   }
 
   .col2 button img {
@@ -1680,8 +1707,12 @@ footer {
     font-size: 18px;
   }
 
+  col2 span p{
+    font-size: 15px;
+  }
+
   .col2 ul li {
-    font-size: 12px;
+    font-size: 13px;
   }
 
   .foot h3 {
