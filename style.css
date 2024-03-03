@@ -35,7 +35,6 @@ header nav img {
 header nav ul {
   display: flex;
   gap: 30px;
-  color: white;
   list-style: none;
 }
 
@@ -51,6 +50,7 @@ header nav ul li a {
 
 header nav .humburger .active {
   text-decoration: underline;
+  color: white;
 }
 
 header nav ul li:hover {
@@ -1238,7 +1238,7 @@ footer {
 
 @media only screen and (max-width: 1300px) {
   header nav .main img {
-    width: 180px;
+    width: 120px;
   }
 
   .main {
@@ -1248,22 +1248,46 @@ footer {
   }
 
   header nav .main .humburger {
-    width: 40%;
-    height: 80vh;
+    width: 30%;
+    height: 95vh;
     position: absolute;
     top: -200%;
     right: 0%;
-    gap: 35px;
+    gap: 30px;
     padding-top: 40px;
     flex-direction: column;
-    color: white;
     border-radius: 0px 0 0 50px;
     justify-content: center;
     align-items: center;
+    text-align: start;
     z-index: 1;
     transition: top ease-in-out 0.8s;
     background-color: cornflowerblue;
   }
+  
+  header nav .main .humburger li a{
+    color: white;
+    transition: all .3s;
+  }
+
+  header nav .main .humburger li:hover{
+
+    text-decoration: none;
+  }
+
+  header nav .main .humburger li:hover a{
+    color: #2A60FF;
+  }
+
+  header nav .main .humburger .active{
+    text-decoration: none;
+  }
+
+  header nav .main .humburger .active a{
+    color: #2A60FF;
+  }
+
+
   .menu {
     z-index: 2;
   }
@@ -1277,7 +1301,7 @@ footer {
   }
   header nav .main .btn img {
     display: block;
-    width: 45px;
+    width: 30px;
     transition: transform ease 1s;
   }
 
@@ -1309,6 +1333,48 @@ footer {
 
   #category {
     width: 80%;
+  }
+
+  .tshirt-list h5 {
+    font-size: 14px;
+  }
+
+  .tshirt-list .name{
+    font-size: 13px;
+  } 
+
+  .tshirt-list .dis{
+    font-size: 13px;
+  }
+
+  .tshirt-list p{
+    font-size: 13px;
+  }
+
+  .row{
+    gap: 25px;
+  }
+
+
+
+  .col2{
+    gap: 15px;
+  }
+
+  .col2 h5{
+    font-size: 25px;
+  }
+
+  .col2 .name{
+    font-size: 18px;
+  }
+
+  .col2 button{
+    font-size: 18px;
+  }
+
+  .col2 ul li{
+    font-size: 13px;
   }
 
   .foot {
@@ -1655,7 +1721,7 @@ footer {
   }
 
   .row {
-    width: 90%;
+    width: 80%;
     flex-direction: column;
   }
 

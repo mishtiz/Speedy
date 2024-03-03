@@ -239,6 +239,37 @@
             </div>
         </div>
     </footer>
+    <script>
+        let humburger = document.querySelector('.humburger');
+        let menu = document.querySelector('.menu');
+        let check = 0;
+
+        menu.addEventListener("click", () => {
+            if (check == 0) {
+                humburger.style.top = "0";
+                check = 1;
+            }
+            else {
+                humburger.style.top = "-200%";
+                check = 0;
+            }
+        })
+
+        let primary_image = document.querySelector('#main-image')
+        let secondary_image = document.querySelectorAll('#secondary-image');
+
+        secondary_image.forEach((e) => {
+            console.log(e);
+            e.addEventListener('click', () => {
+                primary_image.src = e.src;
+            })
+
+        })
+
+        function goto(e) {
+            window.open(e.value)
+        }
+    </script>
 </body>
 
 </html>
