@@ -43,18 +43,17 @@ header nav ul li a {
   color: white;
   text-decoration: none;
   cursor: pointer;
-  font-size: 15px;
-  font-weight: 800;
+  font-size: 18px;
+  font-weight: 600;
   transition: text-decoration ease 1s;
 }
 
 header nav .humburger .active {
-  text-decoration: underline;
-  color: white;
+  text-decoration: underline 2px white;
 }
 
 header nav ul li:hover {
-  text-decoration: underline;
+  text-decoration: underline white 2px;
 }
 
 /* header nav ul li::after {
@@ -102,14 +101,14 @@ header nav .btn img:active {
 }
 
 header nav .btn button {
-  font-size: 14px;
-  padding: 8px 15px;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 5px 15px;
   outline: none;
   border: 1px solid white;
   border-radius: 5px;
   background: transparent;
   cursor: pointer;
-  font-weight: 700;
   color: white;
   /* background-color: white; */
   transition: all ease 0.7s;
@@ -178,7 +177,7 @@ header .ser .search .loc {
 
 header .ser span input {
   width: 800px;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 600;
   outline: none;
   /* border: 1px solid black; */
@@ -208,10 +207,10 @@ header .ser span input::placeholder {
 }
 
 header .ser span button {
-  font-size: 15px;
+  font-size: 16px;
   padding: 5px 15px;
   border-radius: 5px;
-  font-weight: 600;
+  font-weight: 700;
   color: black;
   background: transparent;
   border: 1px solid #2a60ff;
@@ -265,7 +264,6 @@ h4 {
 .mens-category {
   display: flex;
   flex-direction: column;
-  gap: 5px;
   width: 20%;
   text-align: center;
   /* background-color: #2a60ff; */
@@ -280,6 +278,9 @@ h4 {
 }
 
 .mens-category a {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
   text-decoration: none;
   color: black;
 }
@@ -296,7 +297,7 @@ h4 {
 }
 
 .mens-category h5 {
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 800;
 }
 
@@ -304,12 +305,12 @@ h4 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px 25px;
+  gap: 30px 25px;
   margin: 20px 0 60px 0;
 }
 
 .t-shirts {
-  width: 80%;
+  width: 90%;
   margin: auto;
 }
 
@@ -328,7 +329,7 @@ h4 {
 .tshirt-list a {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 8px;
   text-decoration: none;
   color: black;
 }
@@ -341,11 +342,12 @@ h4 {
   width: 100%;
   aspect-ratio: 8/10;
   object-fit: cover;
+  object-position: top;
 }
 
 .tshirt-list h5 {
-  font-size: 15px;
-  font-weight: 600;
+  font-size: 17px;
+  font-weight: 750;
 }
 
 .name {
@@ -503,8 +505,9 @@ h2 {
 }
 
 .category-list .sublist p {
+  font-size: 20px;
   text-align: center;
-  font-weight: 700;
+  font-weight: 600;
   margin: 10px 0;
 }
 
@@ -546,6 +549,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   margin: 10px 0;
+  align-items: center;
 }
 
 .deal-sublist span .p1 {
@@ -554,7 +558,7 @@ h2 {
   background-color: #2a60ff;
   color: white;
   border-radius: 3px;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 600;
 }
 
@@ -565,20 +569,20 @@ h2 {
 }
 
 .deal-sublist p {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
 }
 
 .row {
-  width: 80%;
+  width: 90%;
   margin: 20px auto;
   display: flex;
   /* justify-content: center; */
-  gap: 50px;
+  gap: 25px;
 }
 
 .col1 {
-  width: 50%;
+  width: 60%;
 }
 .col1 img {
   /* width: 100%; */
@@ -609,7 +613,7 @@ h2 {
 }
 
 .col2 {
-  width: 50%;
+  width: 40%;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -1190,7 +1194,7 @@ footer {
 
 .foot .sublink .first-sublink a {
   text-decoration: none;
-  font-size: 13px;
+  font-size: 16px;
   color: rgba(161, 161, 161, 0.9);
   transition: color ease 0.5s;
 }
@@ -1224,17 +1228,18 @@ footer {
 }
 
 ::-webkit-scrollbar-track {
+  border-radius: 50px;
   background: #f1f1f1;
 }
 
 ::-webkit-scrollbar-thumb {
-  border-radius: 1px;
+  border-radius: 50px;
   background: #2295e8;
 }
 
-::-webkit-scrollbar-thumb:hover {
+/* ::-webkit-scrollbar-thumb:hover {
   background: #2a60ff;
-}
+} */
 
 @media only screen and (max-width: 1300px) {
   header nav .main img {
