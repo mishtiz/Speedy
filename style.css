@@ -147,7 +147,7 @@ header .ser .search .loc #location {
   cursor: pointer;
   outline: none;
   border: 1px solid #2a60ff;
-  padding: 5px;
+  padding: 8px 5px;
   border-radius: 5px;
   font-weight: 600;
   transition: all ease 0.5s;
@@ -240,7 +240,7 @@ header .mens-img img {
 }
 
 .mens-wear {
-  width: 80%;
+  width: 90%;
   margin: auto;
 }
 
@@ -266,26 +266,29 @@ h4 {
   flex-direction: column;
   width: 20%;
   text-align: center;
+  border-radius: 10px;
   /* background-color: #2a60ff; */
-  padding: 8px;
-  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+  /* padding: 8px; */
   /* color: white; */
-  transition: transform ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
+  overflow: hidden;
 }
 
 .mens-category:hover {
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.15);
   transform: translateY(-5px);
 }
 
 .mens-category a {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  /* gap: 5px; */
   text-decoration: none;
   color: black;
 }
 
 .mens-category img {
+  /* border-radius: 10px; */
   width: 100%;
   aspect-ratio: 1/1;
   object-fit: cover;
@@ -293,6 +296,7 @@ h4 {
 
 .mens-category p {
   font-size: 18px;
+  margin: 8px 0;
   font-weight: 500;
 }
 
@@ -1301,8 +1305,9 @@ footer {
     width: 50%;
   }
 
-  .opt {
-    font-size: 12px;
+  header .ser .search .loc #location {
+    font-size: 15px;
+    font-weight: 900;
   }
   header nav .main .btn img {
     display: block;
@@ -1469,6 +1474,10 @@ footer {
   .col2 .dis {
     font-size: 12px;
   }
+
+  h4{
+    font-size: 28px;
+  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -1574,6 +1583,10 @@ footer {
     padding: 2px 5px;
   }
 
+  h4{
+    font-size: 25px;
+  }
+
   .detail a{
     font-size: 12px;
   }
@@ -1636,10 +1649,17 @@ footer {
     width: 100%;
   }
   header .ser .search .loc #location {
-    font-size: 15px;
+    font-size: 14px;
+    padding: 5px;
   }
   header .ser span input {
+    font-size: 14px;
     padding: 5px 10px;
+  }
+
+  header .ser span button {
+    font-size: 14px;
+    padding: 5px 12px;
   }
 
   .container {
@@ -1705,17 +1725,17 @@ footer {
   }
 
   .mens-wear-list {
-    gap: 10px;
+    gap: 20px;
   }
 
   .mens-category {
-    width: 115px;
+    width: 40%;
   }
 
-  h4 {
+  /* h4 {
     font-size: 25px;
     padding: 15px 0;
-  }
+  } */
 
   .mens-category h5 {
     font-size: 12px;
@@ -1851,7 +1871,7 @@ footer {
 
 
    h4{
-    font-size: 18px;
+    font-size: 16px;
     padding: 0;
     margin: 20px 0;
   }
