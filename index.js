@@ -28,26 +28,26 @@ setInterval(()=>{
     }
 },4000)
 
-next.addEventListener('click',()=>{
-    if(slidernumber<length){
-        slide[slidernumber].style.transform = `translateX(-${slidernumber*100}%)`;
-        slidernumber++;
-    }
-    else{
-        slide[slidernumber-1].style.transform = `translateX(0%)`;
-        third.style.transform = `translateX(0%)`;
-        second.style.transform = `translateX(0%)`;
-        first.style.transform = `translateX(0%)`;
-        slidernumber = 1;
-    }
-})
+// next.addEventListener('click',()=>{
+//     if(slidernumber<length){
+//         slide[slidernumber].style.transform = `translateX(-${slidernumber*100}%)`;
+//         slidernumber++;
+//     }
+//     else{
+//         slide[slidernumber-1].style.transform = `translateX(0%)`;
+//         third.style.transform = `translateX(0%)`;
+//         second.style.transform = `translateX(0%)`;
+//         first.style.transform = `translateX(0%)`;
+//         slidernumber = 1;
+//     }
+// })
 
-previous.addEventListener('click',()=>{
-    if(slidernumber>1){
-        console.log(slidernumber);
-        slide[slidernumber-1].style.transform = `translateX(-${(slidernumber-2)*100}%)`;
-        slidernumber--;
-    }
+// previous.addEventListener('click',()=>{
+//     if(slidernumber>1){
+//         console.log(slidernumber);
+//         slide[slidernumber-1].style.transform = `translateX(-${(slidernumber-2)*100}%)`;
+//         slidernumber--;
+//     }
     // else{
     //     slide[slidernumber].style.transform = `translateX(-${(length-1)*100}%)`;
     //     first.style.transform = `translateX(-100%)`;
@@ -56,7 +56,7 @@ previous.addEventListener('click',()=>{
     //     slide[4].style.transform = `translateX(-400%)`;
     //     slidernumber = length;
     // }
-})
+// })
 
 
 let humburger = document.querySelector('.humburger');

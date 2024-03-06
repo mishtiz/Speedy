@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/S.png">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-        rel="stylesheet">
+        rel="stylesheet"> -->
 </head>
 
 <body>
@@ -144,7 +144,7 @@
                     </a>
                 </div>
                 <div class="mens-category">
-                    <a href="suit.html">
+                    <a href="sports.html">
                         <img src="https://img101.urbanic.com/v1/goods-pic/36b6875f455e4afabce8f600907a5f36UR_w750_q90.webp"
                             alt="" class="top">
                         <p class="name">Sport-Set</p>
@@ -239,6 +239,37 @@
             </div>
         </div>
     </footer>
+    <script>
+        let humburger = document.querySelector('.humburger');
+        let menu = document.querySelector('.menu');
+        let check = 0;
+
+        menu.addEventListener("click", () => {
+            if (check == 0) {
+                humburger.style.top = "0";
+                check = 1;
+            }
+            else {
+                humburger.style.top = "-200%";
+                check = 0;
+            }
+        })
+
+        let primary_image = document.querySelector('#main-image')
+        let secondary_image = document.querySelectorAll('#secondary-image');
+
+        secondary_image.forEach((e) => {
+            console.log(e);
+            e.addEventListener('click', () => {
+                primary_image.src = e.src;
+            })
+
+        })
+
+        function goto(e) {
+            window.open(e.value)
+        }
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speedy.com</title>
+    <link rel="icon" href="images/S.png">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet"> -->
+</head>
+
+<body>
+    <header class="head">
+        <nav>
+            <div class="main">
+                <!-- <img src="images/speedy.jpg" alt=""> -->
+                <img src="images/LOGO.png" alt="">
+                <ul class="humburger">
+                    <li> <a href="index.html">Home</a></li>
+                    <li class="active"><a href="index-men.html">Men</a></li>
+                    <li><a href="index-women.html">Women</a></li>
+                    <li><a href="index-beauty.html">Beauty & Living</a></li>
+                    <li><a href="index-kids.html">Kids</a></li>
+                    <li><a href="index-deal.html">Today's Deal</a></li>
+                    <li><a href="index-seller.html">Best Seller</a></li>
+                    <li><a href="index-grocery.html">Grocery</a></li>
+                    <li><a href="index-offer.html">Offers</a></li>
+                </ul>
+                <div class="btn">
+                    <button type="submit">Sign up</button>
+                    <!-- <button type="submit">Log-in</button> -->
+                    <button type="submit">Cart</button>
+                    <img src="signin.svg" alt="">
+                    <img src="cart.svg" alt="">
+                    <img class="menu" src="menu.svg" alt="">
+                </div>
+            </div>
+        </nav>
+
+        <div class="ser">
+            <div class="search">
+                <div class="loc">
+                    <img src="location.svg" alt="">
+                    <select name="location" id="location">
+
+                        <option class="opt" value="noida">Noida</option>
+                        <option class="opt" value="sector 63">Sector 63</option>
+                        <option class="opt" value="electronic city">Electronic City</option>
+                        <option class="opt" value="sector 28">Sector 28</option>
+                        <option class="opt" value="sector 18">Sector 18</option>
+                        <option class="opt" value="sector 58">Sector 58</option>
+                        <option class="opt" value="sector 52">Sector 52</option>
+                        <option class="opt" value="city centre">City center</option>
+                        <option class="opt" value="greater noida">Greater Noida</option>
+                        <option class="opt" value="delhi">Delhi</option>
+                    </select>
+                </div>
+                <span>
+                    <input type="search" name="search" placeholder="Search for products, Brand and More...">
+                    <button>Search</button>
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="single-product">
+            <div class="row">
+                <div class="col1">
+                    <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/26018358/2023/12/12/36090151-9aa9-4675-8dcb-04d811f9e75b1702381872536-Being-Human-Men-Trousers-261702381872106-1.jpg"
+                        alt="" width="100%" id="main-image">
+                    <div class="gallary">
+                        <div class="img1">
+                            <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/26018358/2023/12/12/36090151-9aa9-4675-8dcb-04d811f9e75b1702381872536-Being-Human-Men-Trousers-261702381872106-1.jpg"
+                                alt="" width="100%" id="secondary-image">
+                        </div>
+                        <div class="img1">
+                            <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/26018358/2023/12/12/f4c31e06-b51a-4454-b143-fb95a0f2c2561702381872525-Being-Human-Men-Trousers-261702381872106-3.jpg"
+                                alt="" width="100%" id="secondary-image">
+                        </div>
+                        <div class="img1">
+                            <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/26018358/2023/12/12/585ef6ad-03e0-4a3f-ab91-abdcc16fb9a61702381872518-Being-Human-Men-Trousers-261702381872106-4.jpg"
+                                alt="" width="100%" id="secondary-image">
+                        </div>
+                        <div class="img1">
+                            <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/26018358/2023/12/12/4a10f68f-6874-44ca-b4f2-5604ea8778ed1702381872511-Being-Human-Men-Trousers-261702381872106-5.jpg"
+                                alt="" width="100%" id="secondary-image">
+                        </div>
+                    </div>
+                </div>
+                <div class="col2">
+                    <h5 class="brand">Being Human</h5>
+                    <p class="name">Men Solid Mid-Rise Regular Fit Chinos</p>
+                    <p class="dis">MRP <s>RS.2999</s> (60% off)</p>
+                    <p class="mrp">RS.1199.00 </p>
+                    <select>
+                        <option value="">Select size</option>
+                        <option value="">Small</option>
+                        <option value="">Medium</option>
+                        <option value="">Large</option>
+                        <option value="">XL</option>
+                        <option value="">XXL</option>
+                    </select>
+                    <button class="btn1" type="submit" onclick="goto(this)" value="cart.html">
+                        <img src="cart.svg" alt="">
+                        <p> Add to Cart</p>
+                    </button>
+                    <span>
+                        <h6>Product Details</h6>
+                        <ul>
+                            <li>Regular Fit</li>
+                            <li>Package contains : 1 shirt</li>
+                            <li>Machine wash</li>
+                            <li>100% cotton</li>
+                            <li>Product Code: 469194187001</li>
+                            <li>MRP : Rs. 2,599.00 inclusive of all taxes(MRP changes as per size selection)</li>
+                            <li>Marketed By : Importer:- Mirza International Ltd 14/6,Civil Lines Kanpur-208001</li>
+                            <li>Net Qty : 1N</li>
+                            <li>Country Of Origin : Bangladesh</li>
+                            <li>Customer Care Address : Tower-B, 7th Floor,IBC Knowledge Park,Bannerghatta Main
+                                Road,Bhavani Nagar, S.G. Palya,Bengaluru, Karnataka – 560029,Ph: 1800-889-9991,E-mail:
+                                customercare@ajio.com</li>
+                        </ul>
+
+                    </span>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="t-shirts">
+            <h4>Similar Products</h4>
+            <div class="tshirt-category">
+                <div class="tshirt-list">
+                    <a href="trousers-product1.html">
+                        <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11560484/2020/3/2/4f8a3182-3eaf-433a-ad2f-759d424b76631583139513050-WROGN-Men-Trousers-6301583139510897-1.jpg"
+                            alt="">
+                        <h5>WROGN</h5>
+                        <p class="name">Men Black Slim Fit Solid Chinos</p>
+                        <p class="dis"><s>RS.2399</s> (55% off)</p>
+                        <p>RS.1079.00 </p>
+                    </a>
+                </div>
+                <div class="tshirt-list">
+                    <a href="trousers-product3.html">
+                        <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/3881067/2019/8/22/49ab3004-c048-48d0-ba20-167118df26141566479254643-HIGHLANDER-Men-Grey-Tapered-Fit-Solid-Cropped-Chinos-8521566-1.jpg"
+                            alt="">
+                        <h5>HIGHLANDER</h5>
+                        <p class="name">Men Grey Tapered Fit Solid Cropped Chinos</p>
+                        <p class="dis"><s>RS.1549</s> (45% off)</p>
+                        <p>RS.681.00 </p>
+                    </a>
+                </div>
+                <div class="tshirt-list">
+                    <a href="trousers-product4.html">
+                        <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/22194226/2023/3/21/29423aa3-6e96-46eb-a3a2-3b2e00b4ac3b1679379511342-Roadster-Men-Trousers-8271679379510684-1.jpg"
+                            alt="">
+                        <h5>Roadster</h5>
+                        <p class="name">The Life Co. Men Solid Tapered Fit Smart Casual Chinos Trousers</p>
+                        <p class="dis"><s>RS.1999</s> (54% off)</p>
+                        <p>RS.919.00 </p>
+                    </a>
+                </div>
+                <div class="tshirt-list">
+                    <a href="trousers-product5.html">
+                        <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/25754256/2023/11/30/4d5c0594-3cdc-4cb4-a283-082c9ad48a871701333601568-Raymond-Men-Trousers-7311701333601093-1.jpg"
+                            alt="">
+                        <h5>Raymond</h5>
+                        <p class="name">Men Self Design Mid-Rise Textured Slim Fit Formal Trousers</p>
+                        <p class="dis"><s>RS.2499</s> (60% off)</p>
+                        <p>RS.999.00 </p>
+                    </a>
+                </div>
+                <div class="tshirt-list">
+                    <a href="trousers-product6.html">
+                        <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/25753982/2023/12/4/d24be500-ac80-4fe1-91de-6bf205be45951701678725911-Park-Avenue-Men-Trousers-3461701678725481-1.jpg"
+                            alt="">
+                        <h5>Park Avenue</h5>
+                        <p class="name">Men Smart Slim Fit Trousers
+                        </p>
+                        <p class="dis"><s>RS.2299.00</s> (50% off)</p>
+                        <p>RS.1149.00 </p>
+                    </a>
+                </div>
+            </div>
+    </section>
+
+    <footer>
+        <div class="foot">
+            <div class="social">
+                <h3>Follow us</h3>
+                <span>
+                    <img src="twitter.svg" alt="">
+                    <img src="insta.svg" alt="">
+                    <img src="linkedin.svg" alt="">
+                    <img src="facebook.svg" alt="">
+                </span>
+            </div>
+            <div class="links">
+                <h3>Useful Links</h3>
+                <div class="sublink">
+                    <div class="first-sublink">
+                        <a href="#">About</a>
+                        <a href="#">careers</a>
+                        <a href="#">blog</a>
+                        <a href="#">press</a>
+                        <a href="#">lead</a>
+                        <a href="#">value</a>
+
+                    </div>
+                    <div class="first-sublink">
+                        <a href="#">About</a>
+                        <a href="#">careers</a>
+                        <a href="#">blog</a>
+                        <a href="#">press</a>
+                        <a href="#">lead</a>
+                        <a href="#">value</a>
+                    </div>
+                    <div class="first-sublink">
+                        <a href="#">About</a>
+                        <a href="#">careers</a>
+                        <a href="#">blog</a>
+                        <a href="#">press</a>
+                        <a href="#">lead</a>
+                        <a href="#">value</a>
+                    </div>
+                    <div class="first-sublink">
+                        <a href="#">Help</a>
+                        <a href="#">Payment</a>
+                        <a href="#">Shipping</a>
+                        <!-- <a href="#">Cancellation & Returns</a> -->
+                        <a href="#">FAQ</a>
+                        <a href="#">Report</a>
+                    </div>
+                </div>
+            </div>
+            <div class="download">
+                <h3>Download App</h3>
+                <span>
+                    <img src="images/app store.png" alt="">
+                    <img src="images/google play.png" alt="">
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let humburger = document.querySelector('.humburger');
+        let menu = document.querySelector('.menu');
+        let check = 0;
+
+        menu.addEventListener("click", () => {
+            if (check == 0) {
+                humburger.style.top = "0";
+                check = 1;
+            }
+            else {
+                humburger.style.top = "-200%";
+                check = 0;
+            }
+        })
+
+        let primary_image = document.querySelector('#main-image')
+        let secondary_image = document.querySelectorAll('#secondary-image');
+
+        secondary_image.forEach((e) => {
+            console.log(e);
+            e.addEventListener('click', () => {
+                primary_image.src = e.src;
+            })
+
+        })
+
+        function goto(e) {
+            window.open(e.value)
+        }
+    </script>
+</body>
+
+</html>
