@@ -500,6 +500,11 @@ h2 {
   transition: transform ease 0.5s;
 }
 
+.category-list a{
+  text-decoration: none;
+  color: black;
+}
+
 .dress {
   object-position: top;
 }

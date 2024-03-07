@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speedy.com</title>
+    <link rel="icon" href="images/S.png">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet"> -->
+</head>
+
+<body>
+    <header class="head">
+        <nav>
+            <div class="main">
+                <!-- <img src="images/speedy.jpg" alt=""> -->
+                <img src="images/LOGO.png" alt="">
+                <ul class="humburger">
+                    <li> <a href="index.html">Home</a></li>
+                    <li><a href="index-men.html">Men</a></li>
+                    <li><a href="index-women.html">Women</a></li>
+                    <li><a href="index-beauty.html">Beauty & Living</a></li>
+                    <li class="active"><a href="index-kids.html">Kids</a></li>
+                    <li><a href="index-deal.html">Today's Deal</a></li>
+                    <li><a href="index-seller.html">Best Seller</a></li>
+                    <li><a href="index-grocery.html">Grocery</a></li>
+                    <li><a href="index-offer.html">Offers</a></li>
+                </ul>
+                <div class="btn">
+                    <button type="submit">Sign up</button>
+                    <!-- <button type="submit">Log-in</button> -->
+                    <button type="submit">Cart</button>
+                    <img src="signin.svg" alt="">
+                    <img src="cart.svg" alt="">
+                    <img class="menu" src="menu.svg" alt="">
+                </div>
+            </div>
+        </nav>
+
+        <div class="ser">
+            <div class="search">
+                <div class="loc">
+                    <img src="location.svg" alt="">
+                    <select name="location" id="location">
+
+                        <option class="opt" value="noida">Noida</option>
+                        <option class="opt" value="sector 63">Sector 63</option>
+                        <option class="opt" value="electronic city">Electronic City</option>
+                        <option class="opt" value="sector 28">Sector 28</option>
+                        <option class="opt" value="sector 18">Sector 18</option>
+                        <option class="opt" value="sector 58">Sector 58</option>
+                        <option class="opt" value="sector 52">Sector 52</option>
+                        <option class="opt" value="city centre">City center</option>
+                        <option class="opt" value="greater noida">Greater Noida</option>
+                        <option class="opt" value="delhi">Delhi</option>
+                    </select>
+                </div>
+                <span>
+                    <input type="search" name="search" placeholder="Search for products, Brand and More...">
+                    <button>Search</button>
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="single-product">
+            <div class="row">
+                <div class="col1">
+                    <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/21642458/2023/1/20/4ca5121e-2ed2-488a-9231-3db32fdb371a1674212504352Rompers1.jpg"
+                        alt="" width="100%" id="main-image">
+                    <!-- <div class="gallary">
+                        <div class="img1">
+                            <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/16442484/2021/12/9/74a94cf9-d94b-436d-9f5c-a05e500914281639049293213TheBooBooClubKidsPackOf2StripedCombedCottonThermalSet1.jpg"
+                                alt="" width="100%" id="secondary-image">
+                        </div>
+                        <div class="img1">
+                            <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/16442484/2021/12/9/b7a0f006-0266-4690-98e8-430be8c945ae1639049292993TheBooBooClubKidsPackOf2StripedCombedCottonThermalSet3.jpg"
+                                alt="" width="100%" id="secondary-image">
+                        </div>
+                        <div class="img1">
+                            <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/16442484/2021/12/9/fec8b995-e4b5-45c3-b8ac-e6fdf296c34d1639049293346TheBooBooClubKidsPackOf2StripedCombedCottonThermalSet4.jpg"
+                                alt="" width="100%" id="secondary-image">
+                        </div>
+                        <div class="img1">
+                            <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/16442484/2021/12/9/631d1e28-49da-4223-9035-b199e8edea081639049292842TheBooBooClubKidsPackOf2StripedCombedCottonThermalSet5.jpg"
+                                alt="" width="100%" id="secondary-image">
+                        </div>
+                    </div> -->
+                </div>
+                <div class="col2">
+                    <h5 class="brand">EIO</h5>
+                    <p class="name">Infant Kids Pack Of 3 Printed Cotton Sleepsuits</p>
+                    <p class="dis">MRP <s>RS.798</s> (60% off)</p>
+                    <p class="mrp">RS.499.00 </p>
+                    <select>
+                        <option value="">Select size</option>
+                        <option value="">Small</option>
+                        <option value="">Medium</option>
+                        <option value="">Large</option>
+                        <option value="">XL</option>
+                        <option value="">XXL</option>
+                    </select>
+                    <button class="btn1" type="submit" onclick="goto(this)" value="cart.html">
+                        <img src="cart.svg" alt="">
+                        <p> Add to Cart</p>
+                    </button>
+                    <span>
+                        <h6>Product Details</h6>
+                        <ul>
+                            <li>Regular Fit</li>
+                            <li>Package contains : 1 shirt</li>
+                            <li>Machine wash</li>
+                            <li>100% cotton</li>
+                            <li>Product Code: 469194187001</li>
+                            <li>MRP : Rs. 2,599.00 inclusive of all taxes(MRP changes as per size selection)</li>
+                            <li>Marketed By : Importer:- Mirza International Ltd 14/6,Civil Lines Kanpur-208001</li>
+                            <li>Net Qty : 1N</li>
+                            <li>Country Of Origin : Bangladesh</li>
+                            <li>Customer Care Address : Tower-B, 7th Floor,IBC Knowledge Park,Bannerghatta Main
+                                Road,Bhavani Nagar, S.G. Palya,Bengaluru, Karnataka – 560029,Ph: 1800-889-9991,E-mail:
+                                customercare@ajio.com</li>
+                        </ul>
+
+                    </span>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="t-shirts">
+            <h4>Similar Products</h4>
+            <div class="tshirt-category">
+                <div class="tshirt-list">
+                    <a href="pack1.html">
+                        <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/26823764/2024/1/8/87e04314-aad2-4afd-99c4-66f00ec68ecb1704696574666BAESDUnisexKidsWhiteBluePrintedT-shirtwithShorts1.jpg"
+                            alt="">
+                        <h5>BAESD</h5>
+                        <p class="name">Kids Pack Of 3 Printed T-shirt with Shorts</p>
+                        <p class="dis"><s>RS.798</s> (65% off)</p>
+                        <p>RS.449.00 </p>
+                    </a>
+                </div>
+                <div class="tshirt-list">
+                    <a href="pack2.html">
+                        <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2021/2/26/07837259-ff86-4e2a-b4f5-6da6d2b92d401614340366668-1.jpg"
+                            alt="">
+                        <h5>x2o</h5>
+                        <p class="name">Kids Pack of 6 Cotton Lounge Pants
+                        </p>
+                        <p class="dis"><s>RS.1073</s> (50% off)</p>
+                        <p>RS.567.00</p>
+                    </a>
+                </div>
+                <div class="tshirt-list">
+                    <a href="pack3.html">
+                        <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/21070948/2022/12/5/0916d0a1-06a4-4bc6-8921-89e4490675ad1670225466970Tshirts1.jpg"
+                            alt="">
+                        <h5>Minicult</h5>
+                        <p class="name">Kids Pack of 2 Mickey Mouse Printed Cotton T-shirt</p>
+                        <p class="dis"><s>RS.790</s> (55% off)</p>
+                        <p>RS.499.00 </p>
+                    </a>
+                </div>
+                <div class="tshirt-list">
+                    <a href="pack4.html">
+                        <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/24219234/2023/10/13/59e2afa2-b262-44bd-a2a8-20082f9577ba1697199657318KiddoPantiKidsPackOf2PureCottonJoggers1.jpg"
+                            alt="">
+                        <h5>KiddoPanti</h5>
+                        <p class="name">Kids Pack Of 2 Pure Cotton Joggers</p>
+                        <p class="dis"><s>RS.409</s> (49% off)</p>
+                        <p>RS.239.00 </p>
+                    </a>
+                </div>
+                <div class="tshirt-list">
+                    <a href="pack5.html">
+                        <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/26950594/2024/1/17/bae803fd-c8dc-4468-a45a-7763298dca0e1705476604959MomsLoveInfantsPackOf2PrintedCottonRompers1.jpg"
+                            alt="">
+                        <h5>Moms Love</h5>
+                        <p class="name">Kids Pack Of 2 Graphic Printed Cotton Rompers</p>
+                        <p class="dis"><s>RS.459</s> (40% off)</p>
+                        <p>RS.259.00 </p>
+                    </a>
+                </div>
+            </div>
+    </section>
+         
+
+    <footer>
+        <div class="foot">
+            <div class="social">
+                <h3>Follow us</h3>
+                <span>
+                    <img src="twitter.svg" alt="">
+                    <img src="insta.svg" alt="">
+                    <img src="linkedin.svg" alt="">
+                    <img src="facebook.svg" alt="">
+                </span>
+            </div>
+            <div class="links">
+                <h3>Useful Links</h3>
+                <div class="sublink">
+                    <div class="first-sublink">
+                        <a href="#">About</a>
+                        <a href="#">careers</a>
+                        <a href="#">blog</a>
+                        <a href="#">press</a>
+                        <a href="#">lead</a>
+                        <a href="#">value</a>
+
+                    </div>
+                    <div class="first-sublink">
+                        <a href="#">About</a>
+                        <a href="#">careers</a>
+                        <a href="#">blog</a>
+                        <a href="#">press</a>
+                        <a href="#">lead</a>
+                        <a href="#">value</a>
+                    </div>
+                    <div class="first-sublink">
+                        <a href="#">About</a>
+                        <a href="#">careers</a>
+                        <a href="#">blog</a>
+                        <a href="#">press</a>
+                        <a href="#">lead</a>
+                        <a href="#">value</a>
+                    </div>
+                    <div class="first-sublink">
+                        <a href="#">Help</a>
+                        <a href="#">Payment</a>
+                        <a href="#">Shipping</a>
+                        <!-- <a href="#">Cancellation & Returns</a> -->
+                        <a href="#">FAQ</a>
+                        <a href="#">Report</a>
+                    </div>
+                </div>
+            </div>
+            <div class="download">
+                <h3>Download App</h3>
+                <span>
+                    <img src="images/app store.png" alt="">
+                    <img src="images/google play.png" alt="">
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let humburger = document.querySelector('.humburger');
+        let menu = document.querySelector('.menu');
+        let check = 0;
+
+        menu.addEventListener("click", () => {
+            if (check == 0) {
+                humburger.style.top = "0";
+                check = 1;
+            }
+            else {
+                humburger.style.top = "-200%";
+                check = 0;
+            }
+        })
+
+        let primary_image = document.querySelector('#main-image')
+        let secondary_image = document.querySelectorAll('#secondary-image');
+
+        secondary_image.forEach((e) => {
+            console.log(e);
+            e.addEventListener('click', () => {
+                primary_image.src = e.src;
+            })
+
+        })
+
+        function goto(e) {
+            window.open(e.value)
+        }
+    </script>
+</body>
+
+</html>

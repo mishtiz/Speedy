@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speedy.com</title>
+    <link rel="icon" href="images/S.png">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet"> -->
+</head>
+
+<body>
+    <header class="head">
+        <nav>
+            <div class="main">
+                <!-- <img src="images/speedy.jpg" alt=""> -->
+                <img src="images/LOGO.png" alt="">
+                <ul class="humburger">
+                    <li> <a href="index.html">Home</a></li>
+                    <li><a href="index-men.html">Men</a></li>
+                    <li><a href="index-women.html">Women</a></li>
+                    <li><a href="index-beauty.html">Beauty & Living</a></li>
+                    <li class="active"><a href="index-kids.html">Kids</a></li>
+                    <li><a href="index-deal.html">Today's Deal</a></li>
+                    <li><a href="index-seller.html">Best Seller</a></li>
+                    <li><a href="index-grocery.html">Grocery</a></li>
+                    <li><a href="index-offer.html">Offers</a></li>
+                </ul>
+                <div class="btn">
+                    <button type="submit">Sign up</button>
+                    <!-- <button type="submit">Log-in</button> -->
+                    <button type="submit">Cart</button>
+                    <img src="signin.svg" alt="">
+                    <img src="cart.svg" alt="">
+                    <img class="menu" src="menu.svg" alt="">
+                </div>
+            </div>
+        </nav>
+
+        <div class="ser">
+            <div class="search">
+                <div class="loc">
+                    <img src="location.svg" alt="">
+                    <select name="location" id="location">
+
+                        <option class="opt" value="noida">Noida</option>
+                        <option class="opt" value="sector 63">Sector 63</option>
+                        <option class="opt" value="electronic city">Electronic City</option>
+                        <option class="opt" value="sector 28">Sector 28</option>
+                        <option class="opt" value="sector 18">Sector 18</option>
+                        <option class="opt" value="sector 58">Sector 58</option>
+                        <option class="opt" value="sector 52">Sector 52</option>
+                        <option class="opt" value="city centre">City center</option>
+                        <option class="opt" value="greater noida">Greater Noida</option>
+                        <option class="opt" value="delhi">Delhi</option>
+                    </select>
+                </div>
+                <span>
+                    <input type="search" name="search" placeholder="Search for products, Brand and More...">
+                    <button>Search</button>
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="single-product">
+            <div class="row">
+                <div class="col1">
+                    <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/19833114/2022/9/8/4adda430-ea59-4187-bc82-2bbd21c3ab751662634873053CltsUnisexKidsBlackWhitePrintedNightsuit1.jpg"
+                        alt="" width="100%" id="main-image">
+                    <div class="gallary">
+                        <div class="img1">
+                            <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/19833114/2022/9/8/4adda430-ea59-4187-bc82-2bbd21c3ab751662634873053CltsUnisexKidsBlackWhitePrintedNightsuit1.jpg"
+                                alt="" width="100%" id="secondary-image">
+                        </div>
+                        <div class="img1">
+                            <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/19833114/2022/9/8/35daa675-e6fa-4f3e-aa93-45b3cced48e71662634873079CltsUnisexKidsBlackWhitePrintedNightsuit2.jpg"
+                                alt="" width="100%" id="secondary-image">
+                        </div>
+                        <div class="img1">
+                            <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/19833114/2022/9/8/d66789b1-fffd-4659-b58c-b3c2113ba5451662634873066CltsUnisexKidsBlackWhitePrintedNightsuit3.jpg"
+                                alt="" width="100%" id="secondary-image">
+                        </div>
+                        <div class="img1">
+                            <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/19833114/2022/9/8/fad56632-ebbc-441d-8d59-2c3952d2d21d1662634873040CltsUnisexKidsBlackWhitePrintedNightsuit4.jpg"
+                                alt="" width="100%" id="secondary-image">
+                        </div>
+                    </div>
+                </div>
+                <div class="col2">
+                    <h5 class="brand">Clt.s</h5>
+                    <p class="name">Kids Black & White Printed Pure Cotton Night suit</p>
+                    <p class="dis">MRP <s>RS.798</s> (60% off)</p>
+                    <p class="mrp">RS.499.00 </p>
+                    <select>
+                        <option value="">Select size</option>
+                        <option value="">Small</option>
+                        <option value="">Medium</option>
+                        <option value="">Large</option>
+                        <option value="">XL</option>
+                        <option value="">XXL</option>
+                    </select>
+                    <button class="btn1" type="submit" onclick="goto(this)" value="cart.html">
+                        <img src="cart.svg" alt="">
+                        <p> Add to Cart</p>
+                    </button>
+                    <span>
+                        <h6>Product Details</h6>
+                        <ul>
+                            <li>Regular Fit</li>
+                            <li>Package contains : 1 shirt</li>
+                            <li>Machine wash</li>
+                            <li>100% cotton</li>
+                            <li>Product Code: 469194187001</li>
+                            <li>MRP : Rs. 2,599.00 inclusive of all taxes(MRP changes as per size selection)</li>
+                            <li>Marketed By : Importer:- Mirza International Ltd 14/6,Civil Lines Kanpur-208001</li>
+                            <li>Net Qty : 1N</li>
+                            <li>Country Of Origin : Bangladesh</li>
+                            <li>Customer Care Address : Tower-B, 7th Floor,IBC Knowledge Park,Bannerghatta Main
+                                Road,Bhavani Nagar, S.G. Palya,Bengaluru, Karnataka – 560029,Ph: 1800-889-9991,E-mail:
+                                customercare@ajio.com</li>
+                        </ul>
+
+                    </span>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="t-shirts">
+            <h4>Similar Products</h4>
+            <div class="tshirt-category">
+                <div class="tshirt-list">
+                    <a href="sleep2.html">
+                        <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/26146106/2023/11/30/8aff1441-2c3e-45fe-ac27-1954e1dcf1771701349159449ClothingSet1.jpg"
+                            alt="">
+                        <h5>Knitting Doodles</h5>
+                        <p class="name">Girls Cartoon Characters Printed Lapel Collar Night Suits
+                        </p>
+                        <p class="dis"><s>RS.1073</s> (50% off)</p>
+                        <p>RS.567.00</p>
+                    </a>
+                </div>
+                <div class="tshirt-list">
+                    <a href="sleep3.html">
+                        <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/17445782/2022/3/9/bcd3226c-ca69-46dd-92f1-b14582a280b21646801263249KnittingDoodlesUnisexKidsBlueNightsuits1.jpg"
+                            alt="">
+                        <h5>Knitting Doodles</h5>
+                        <p class="name">Unisex Kids Blue Striped Night suit</p>
+                        <p class="dis"><s>RS.790</s> (55% off)</p>
+                        <p>RS.499.00 </p>
+                    </a>
+                </div>
+                <div class="tshirt-list">
+                    <a href="sleep4.html">
+                        <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/22844954/2023/4/21/654c618f-8a6c-44f0-851d-44cd7ee6a1371682055933536KidsTomandJerryCo-ordSet1.jpg"
+                            alt="">
+                        <h5>Nap Chief</h5>
+                        <p class="name">Kids Tom & Jerry Printed Pure Cotton Night Suit</p>
+                        <p class="dis"><s>RS.409</s> (49% off)</p>
+                        <p>RS.239.00 </p>
+                    </a>
+                </div>
+                <div class="tshirt-list">
+                    <a href="sleep1.html">
+                        <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/22679490/2023/4/6/45c860cf-c53d-4a88-81a2-706e8401922e1680793703675AnthriloGirlsNightsuits1.jpg"
+                            alt="">
+                        <h5>Anthrilo</h5>
+                        <p class="name">Girls Pack Of 2 Conversational Printed Pure Cotton Night Suit</p>
+                        <p class="dis"><s>RS.798</s> (65% off)</p>
+                        <p>RS.449.00 </p>
+                    </a>
+                </div>
+                <div class="tshirt-list">
+                    <a href="sleep6.html">
+                        <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/25715762/2023/11/1/f85ed367-b607-4a07-91cf-d42c5350dd351698837559443RAININGDINOSAURLONGSLEEVESPYJAMASETD-YELLOW1.jpg"
+                            alt="">
+                        <h5>Anthrilo</h5>
+                        <p class="name">Boys Raining Dinosaur Printed Night Suit</p>
+                        <p class="dis"><s>RS.459</s> (40% off)</p>
+                        <p>RS.259.00 </p>
+                    </a>
+                </div>
+            </div>
+    </section>
+         
+
+    <footer>
+        <div class="foot">
+            <div class="social">
+                <h3>Follow us</h3>
+                <span>
+                    <img src="twitter.svg" alt="">
+                    <img src="insta.svg" alt="">
+                    <img src="linkedin.svg" alt="">
+                    <img src="facebook.svg" alt="">
+                </span>
+            </div>
+            <div class="links">
+                <h3>Useful Links</h3>
+                <div class="sublink">
+                    <div class="first-sublink">
+                        <a href="#">About</a>
+                        <a href="#">careers</a>
+                        <a href="#">blog</a>
+                        <a href="#">press</a>
+                        <a href="#">lead</a>
+                        <a href="#">value</a>
+
+                    </div>
+                    <div class="first-sublink">
+                        <a href="#">About</a>
+                        <a href="#">careers</a>
+                        <a href="#">blog</a>
+                        <a href="#">press</a>
+                        <a href="#">lead</a>
+                        <a href="#">value</a>
+                    </div>
+                    <div class="first-sublink">
+                        <a href="#">About</a>
+                        <a href="#">careers</a>
+                        <a href="#">blog</a>
+                        <a href="#">press</a>
+                        <a href="#">lead</a>
+                        <a href="#">value</a>
+                    </div>
+                    <div class="first-sublink">
+                        <a href="#">Help</a>
+                        <a href="#">Payment</a>
+                        <a href="#">Shipping</a>
+                        <!-- <a href="#">Cancellation & Returns</a> -->
+                        <a href="#">FAQ</a>
+                        <a href="#">Report</a>
+                    </div>
+                </div>
+            </div>
+            <div class="download">
+                <h3>Download App</h3>
+                <span>
+                    <img src="images/app store.png" alt="">
+                    <img src="images/google play.png" alt="">
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let humburger = document.querySelector('.humburger');
+        let menu = document.querySelector('.menu');
+        let check = 0;
+
+        menu.addEventListener("click", () => {
+            if (check == 0) {
+                humburger.style.top = "0";
+                check = 1;
+            }
+            else {
+                humburger.style.top = "-200%";
+                check = 0;
+            }
+        })
+
+        let primary_image = document.querySelector('#main-image')
+        let secondary_image = document.querySelectorAll('#secondary-image');
+
+        secondary_image.forEach((e) => {
+            console.log(e);
+            e.addEventListener('click', () => {
+                primary_image.src = e.src;
+            })
+
+        })
+
+        function goto(e) {
+            window.open(e.value)
+        }
+    </script>
+</body>
+
+</html>
