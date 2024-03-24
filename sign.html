@@ -78,25 +78,48 @@
     </header>
 
     <section class="signup-form">
+        <span class="sign-up-sucess"></span>
         <div class="container-sign">
             <div class="login form">
                 <h1>Sign up</h1>
-                <form action="#">
+                <form action="#" name="myform" onsubmit="return validateform(event)">
                     <div class="main-input">
-                        <div class="input">
-                            <input type="email" placeholder="E-MAIL">
-                            <span><img src="mail.svg" alt=""></span>
+                        <div id="mail" class="input" style="flex-direction: column; gap: 5px; align-items: start;">
+                            <div class="inner" style="display: flex;
+                            width: 100%;
+                            gap: 10px;
+                            align-items: center;
+                            justify-content: center;">
+                                <input type="text" placeholder="E-MAIL" name="mail">
+                                <span><img src="mail.svg" alt=""></span>
+                            </div>
+                            <span  class="formerror" ></span>
                         </div>
-                        <div class="input">
-                            <input type="text" placeholder="USERNAME">
-                            <span><img src="user.svg" alt=""></span>
+                        <div id="name"  class="input" style="flex-direction: column; gap: 5px; align-items: start;">
+                            <div class="inner" style="display: flex;
+                            width: 100%;
+                            gap: 10px;
+                            align-items: center;
+                            justify-content: center;">
+                                <input type="text" placeholder="USERNAME" name="username">
+                                <span><img src="user.svg" alt=""></span>
+                            </div>
+                            <span class="formerror" ></span>
                         </div>
-                        <div class="input">
-                            <input type="password" placeholder="PASSWORD">
-                            <span><img src="password.svg" alt=""></span>
+                        <div id="pass" class="input" style="flex-direction: column; gap: 5px; align-items: start;">
+                            <div class="inner" style="display: flex;
+                            width: 100%;
+                            gap: 10px;
+                            align-items: center;
+                            justify-content: center;">
+                                <input type="password" placeholder="PASSWORD" name="pass">
+                                <span><img src="password.svg" alt=""></span>
+                            </div>
+                            <span class="formerror" ></span>
                         </div>
-                        <div class="rem">
-                            <label><input type="checkbox">I agree to the terms & conditions</label>
+                        <div class="rem" id="check" style="display: flex; align-items: start; flex-direction: column; gap: 5px;" >
+                            <label><input type="checkbox" name="box">I agree to the terms & conditions</label>
+                            <span class="formerror"></span>
                         </div>
                         <button type="submit" class="btn2">Sign Up</button>
                         <div class="reg">
@@ -107,25 +130,39 @@
             </div>
             <div class="login register">
                 <h1>Login</h1>
-                <form action="#">
+                <form action="#" name="form" onsubmit="return validateloginform(event)">
                     <div class="main-input">
-                    <div class="input">
-                        <input type="text" placeholder="USERNAME">
-                        <span><img src="user.svg" alt=""></span>
+                        <div id="username"  class="input" style="flex-direction: column; gap: 5px; align-items: start;">
+                            <div class="inner" style="display: flex;
+                            width: 100%;
+                            gap: 10px;
+                            align-items: center;
+                            justify-content: center;">
+                                <input type="text" placeholder="USERNAME" name="username">
+                                <span><img src="user.svg" alt=""></span>
+                            </div>
+                            <span class="formerror" ></span>
+                        </div>
+                        <div id="password" class="input" style="flex-direction: column; gap: 5px; align-items: start;">
+                            <div class="inner" style="display: flex;
+                            width: 100%;
+                            gap: 10px;
+                            align-items: center;
+                            justify-content: center;">
+                                <input type="password" placeholder="PASSWORD" name="pass">
+                                <span><img src="password.svg" alt=""></span>
+                            </div>
+                            <span class="formerror" ></span>
+                        </div>
+                        <div class="rem">
+                            <label><input type="checkbox">Remember me</label>
+                            <a href="#">Forget Password</a>
+                        </div>
+                        <button type="submit" class="btn2">Login</button>
+                        <div class="reg">
+                            <p>Don't have an account?<a href="#" class="reg-link"> Register</a></p>
+                        </div>
                     </div>
-                    <div class="input">
-                        <input type="password" placeholder="PASSWORD">
-                        <span><img src="password.svg" alt=""></span>
-                    </div>
-                    <div class="rem">
-                        <label><input type="checkbox">Remember me</label>
-                        <a href="#">Forget Password</a>
-                    </div>
-                    <button type="submit" class="btn2">Login</button>
-                    <div class="reg">
-                        <p>Don't have an account?<a href="#" class="reg-link"> Register</a></p>
-                    </div>
-                </div>
                 </form>
             </div>
         </div>
@@ -189,6 +226,7 @@
             </div>
         </div>
     </footer>
+    <script src="form.js"></script>
     <script>
         let humburger = document.querySelector('.humburger');
         let menu = document.querySelector('.menu');

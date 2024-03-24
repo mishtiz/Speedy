@@ -412,6 +412,12 @@ h4 {
   border-radius: 50px;
 }
 
+.formerror {
+  color: red;
+  font-weight: 600;
+  padding-inline: 2px;
+}
+
 .sliding {
   width: 100%;
   height: auto;
@@ -500,7 +506,7 @@ h2 {
   transition: transform ease 0.5s;
 }
 
-.category-list a{
+.category-list a {
   text-decoration: none;
   color: black;
 }
@@ -543,7 +549,7 @@ h2 {
   transition: transform ease-in-out 0.5s;
 }
 
-.deal-sublist a{
+.deal-sublist a {
   text-decoration: none;
   color: black;
 }
@@ -616,12 +622,12 @@ h2 {
   flex-basis: 24%;
 }
 
-.gal-img img{
+.gal-img img {
   aspect-ratio: 21/26;
   object-fit: cover;
 }
 
-.main-img img{
+.main-img img {
   aspect-ratio: 21/26;
   object-fit: cover;
 }
@@ -741,13 +747,10 @@ select:focus {
   display: flex;
   height: fit-content;
   flex-direction: column;
-  gap: 10px; 
+  gap: 10px;
 }
 
-
-
-
-.upper{
+.upper {
   width: 100%;
   height: fit-content;
   display: flex;
@@ -755,53 +758,53 @@ select:focus {
   /* flex-direction: column; */
 }
 
-.picture img{
+.picture img {
   width: 150px;
   /* height: 150px; */
   object-fit: cover;
   object-position: top;
 }
 
-.detail{
+.detail {
   display: flex;
   gap: 10px;
   flex-direction: column;
 }
 
-.detail h6{
+.detail h6 {
   font-size: 18px;
   font-weight: 600;
 }
 
-.detail .price{
+.detail .price {
   font-size: 14px;
-  opacity: .5;
+  opacity: 0.5;
 }
 
-.detail p{
+.detail p {
   font-size: 16px;
   font-weight: 550;
   /* opacity: .7; */
 }
 
-.mr{
+.mr {
   /* font-size: 18px; */
   font-weight: 600;
   opacity: 10;
 }
 
-.detail span{
+.detail span {
   display: flex;
   gap: 10px;
   align-items: center;
 }
 
-.detail span h5{
+.detail span h5 {
   font-size: 15px;
   font-weight: 600;
 }
 
-.detail span input{
+.detail span input {
   width: 30px;
   text-align: center;
   padding: 0px 5px;
@@ -809,55 +812,54 @@ select:focus {
   outline: none;
 }
 
-.detail a{
+.detail a {
   text-decoration: none;
   color: black;
   font-weight: 600;
   font-size: 15px;
 }
 
-.detail a:hover{
+.detail a:hover {
   color: #2a60ff;
 }
 
-.box2{
+.box2 {
   display: flex;
   flex-direction: column;
   height: fit-content;
-  width: 30%; 
+  width: 30%;
   gap: 10px;
 }
 
-.box2 .line{
+.box2 .line {
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 1px;
   margin: 5px 0;
 }
 
-.box2 h1{
+.box2 h1 {
   font-size: 20px;
   font-weight: 600;
   padding: 5px 10px 0 10px;
 }
 
-.box2 span{
+.box2 span {
   display: flex;
   justify-content: space-between;
   padding: 5px 10px;
 }
 
-.box2 h3{
+.box2 h3 {
   font-size: 15px;
   font-weight: 600;
 }
 
-.box2 p{
+.box2 p {
   font-size: 15px;
 }
 
-
-.container button{
+.container button {
   font-size: 20px;
   padding: 10px 25px;
   font-weight: 500;
@@ -866,190 +868,193 @@ select:focus {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: all ease-in-out .2s;
+  transition: all ease-in-out 0.2s;
 }
 
-.container button:hover{
+.container button:hover {
   background-color: #2295e8;
 }
 
-.container button:active{
-  transform: scale(.9);
+.container button:active {
+  transform: scale(0.9);
 }
 
 /* Cart Section end */
 
 /* sign-up */
 
-  .signup-form{
-    display: flex;
-    height: 80vh;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    /* background-color:#2a60ff ; */
-    /* background-image: url(https://img.freepik.com/free-photo/wooden-shelf-tropical-forest-product-presentation-dark-green-background_41470-5139.jpg?w=740&t=st=1708430495~exp=1708431095~hmac=6aa7ee07da6a0afdf615db48de5f8b06a3a9bab814798ead437eaf76f1e75247);
+.signup-form {
+  display: flex;
+  height: auto;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* background-color:#2a60ff ; */
+  /* background-image: url(https://img.freepik.com/free-photo/wooden-shelf-tropical-forest-product-presentation-dark-green-background_41470-5139.jpg?w=740&t=st=1708430495~exp=1708431095~hmac=6aa7ee07da6a0afdf615db48de5f8b06a3a9bab814798ead437eaf76f1e75247);
     background-repeat: no-repeat;
     background-size: cover; */
-  }
+}
 
-  .container-sign{
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid black;
-    border-radius: 10px;
-    width: 25%;
-    padding: 20px 20px;
-    overflow: hidden;
-    /* background: transparent;
+.sign-up-sucess {
+  margin: 10px 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.container-sign {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 25%;
+  padding: 20px 20px;
+  margin: 10px 0;
+  overflow: hidden;
+  /* background: transparent;
     backdrop-filter: blur(20px); */
-  }
+}
 
-  /* .focus{
+/* .focus{
     width: 25%;
   } */
 
-  
-  .form{
-    transform: translate(0);
-    transition: all ease-in-out .5s;
-  }
-  
-  .container-sign.focus .form{
-    transform: translate(-1000px);
-  }
-  .container-sign .register{
-    position: absolute;
-    transform: translateX(1000px);
-    transition: all ease-in-out .5s;
-  }
-  .container-sign.focus .register{
-    transform: translate(0px);
-  }
+.form {
+  transform: translate(0);
+  transition: all ease-in-out 0.5s;
+}
 
+.container-sign.focus .form {
+  transform: translate(-1000px);
+}
+.container-sign .register {
+  position: absolute;
+  transform: translateX(1000px);
+  transition: all ease-in-out 0.5s;
+}
+.container-sign.focus .register {
+  transform: translate(0px);
+}
 
+.login {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
 
-  .login{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-  }
+.login h1 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  /* margin: 10px 0; */
+}
 
-  .login h1{
-    text-align: center;
-    font-size: 30px;
-    font-weight: 600;
-    /* margin: 10px 0; */
-  }
+.main-input {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 
-  .main-input{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
+.register .main-input {
+  padding: 20px;
+}
 
-  .register .main-input{
-    padding: 20px;
-  }
+.input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 
-  .input{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .input input{
-    width: 100%;
-    font-size: 13px;
-    border-radius: 10px;
-    padding: 8px 15px;
-    border: none;
-    outline: none;
-    background-color: rgb(241, 241, 241);
-  }
-  
-  .input input:focus{
-    background-color: white;
-  }
+.input input {
+  width: 100%;
+  font-size: 13px;
+  border-radius: 10px;
+  padding: 8px 15px;
+  border: none;
+  outline: none;
+  background-color: rgb(241, 241, 241);
+}
 
-  .register .rem{
-    display: flex;
-    justify-content: space-between;
-  }
+.input input:focus {
+  background-color: white;
+}
 
-  .register .rem a{
-    font-size: 14px;
-    color: #2a60ff;
-    text-decoration: none;
-  }
+.register .rem {
+  display: flex;
+  justify-content: space-between;
+}
 
-  .register .rem a:hover{
-    text-decoration: underline;
-  }
-  
-  .rem label input{
-    margin-right: 5px;
-    cursor: pointer;
-  }
-  
-  .rem label{
-    font-size: 14px;
-    font-weight: 600;
-    cursor: pointer;
-  }
+.register .rem a {
+  font-size: 14px;
+  color: #2a60ff;
+  text-decoration: none;
+}
 
-  .btn2{
-    /* margin: auto; */
-    /* width: fit-content; */
-    font-size: 20px;
-    font-weight: 600;
-    padding: 5px 20px;
-    border-radius: 10px;
-    outline: none;
-    border: none;
-    color: white;
-    background-color:#2a60ff ;
-    transition: all ease-in-out .2s;
-    cursor: pointer;
-  }
+.register .rem a:hover {
+  text-decoration: underline;
+}
 
-  .btn2:active{
-    transform: scale(.9);
-  }
+.rem label input {
+  margin-right: 5px;
+  cursor: pointer;
+}
 
-  .btn2:hover{
-    background-color: #2295e8;
-  }
+.rem label {
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
 
+.btn2 {
+  /* margin: auto; */
+  /* width: fit-content; */
+  font-size: 20px;
+  font-weight: 600;
+  padding: 5px 20px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  color: white;
+  background-color: #2a60ff;
+  transition: all ease-in-out 0.2s;
+  cursor: pointer;
+}
 
-  .reg{
-    font-size: 15px;
-    text-align: center;
-    cursor: pointer;
-  }
+.btn2:active {
+  transform: scale(0.9);
+}
 
-  .reg p{
-    font-weight: 600;
-  }
+.btn2:hover {
+  background-color: #2295e8;
+}
 
-  .reg a{
-    color: #2a60ff;
-    text-decoration: none;
-  }
+.reg {
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+}
 
-  .reg a:hover{
-    text-decoration: underline;
-  }
-  
+.reg p {
+  font-weight: 600;
+}
+
+.reg a {
+  color: #2a60ff;
+  text-decoration: none;
+}
+
+.reg a:hover {
+  text-decoration: underline;
+}
 
 /* sign-up-end */
 
 /* women section */
 
-.women-category{
+.women-category {
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -1057,10 +1062,10 @@ select:focus {
   text-align: center;
   /* background-color: #2a60ff; */
   padding: 8px;
-  
+
   transition: transform ease-in-out 0.5s;
 }
-.women-wear-list{
+.women-wear-list {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1092,7 +1097,7 @@ h4 {
   object-position: top;
 }
 
-.women2{
+.women2 {
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -1103,7 +1108,7 @@ h4 {
   box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
   transition: transform ease-in-out 0.5s;
 }
-.kapre1{
+.kapre1 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1144,7 +1149,7 @@ h4 {
   font-weight: 800;
 }
 
-.top{
+.top {
   object-position: top;
 }
 
@@ -1283,29 +1288,27 @@ footer {
     transition: top ease-in-out 0.8s;
     background-color: cornflowerblue;
   }
-  
-  header nav .main .humburger li a{
+
+  header nav .main .humburger li a {
     color: white;
-    transition: all .3s;
+    transition: all 0.3s;
   }
 
-  header nav .main .humburger li:hover{
-
+  header nav .main .humburger li:hover {
     text-decoration: none;
   }
 
-  header nav .main .humburger li:hover a{
-    color: #2A60FF;
+  header nav .main .humburger li:hover a {
+    color: #2a60ff;
   }
 
-  header nav .main .humburger .active{
+  header nav .main .humburger .active {
     text-decoration: none;
   }
 
-  header nav .main .humburger .active a{
-    color: #2A60FF;
+  header nav .main .humburger .active a {
+    color: #2a60ff;
   }
-
 
   .menu {
     z-index: 2;
@@ -1359,41 +1362,39 @@ footer {
     font-size: 14px;
   }
 
-  .tshirt-list .name{
-    font-size: 13px;
-  } 
-
-  .tshirt-list .dis{
+  .tshirt-list .name {
     font-size: 13px;
   }
 
-  .tshirt-list p{
+  .tshirt-list .dis {
     font-size: 13px;
   }
 
-  .row{
+  .tshirt-list p {
+    font-size: 13px;
+  }
+
+  .row {
     gap: 25px;
   }
 
-
-
-  .col2{
+  .col2 {
     gap: 15px;
   }
 
-  .col2 h5{
+  .col2 h5 {
     font-size: 25px;
   }
 
-  .col2 .name{
+  .col2 .name {
     font-size: 18px;
   }
 
-  .col2 button{
+  .col2 button {
     font-size: 18px;
   }
 
-  .col2 ul li{
+  .col2 ul li {
     font-size: 13px;
   }
 
@@ -1453,20 +1454,27 @@ footer {
     font-size: 15px;
   }
 
-  .cart{
+  .cart {
     width: 90%;
     gap: 25px;
   }
 
-  .container-sign{
+  .container-sign {
     width: 35%;
   }
-
 }
 
 @media only screen and (max-width: 850px) {
   .tshirt-list {
     width: 40%;
+  }
+
+  .login {
+    width: 100%;
+  }
+
+  .sign-up-sucess {
+    font-size: 1.5rem;
   }
 
   .tshirt-category {
@@ -1485,7 +1493,7 @@ footer {
     font-size: 12px;
   }
 
-  h4{
+  h4 {
     font-size: 28px;
   }
 }
@@ -1493,6 +1501,14 @@ footer {
 @media only screen and (max-width: 700px) {
   .mens-category {
     width: 150px;
+  }
+
+  .login {
+    width: 90%;
+  }
+
+  .sign-up-sucess {
+    font-size: 1.3rem;
   }
 
   .mens-wear-list {
@@ -1519,7 +1535,7 @@ footer {
     flex-direction: column;
   }
 
-  .col1{
+  .col1 {
     width: 100%;
   }
 
@@ -1544,17 +1560,16 @@ footer {
     font-size: 20px;
   }
 
-  .col2 button{
+  .col2 button {
     padding: 15px 30px;
   }
 
-
-  .col2 button p{
+  .col2 button p {
     font-size: 20px;
     font-weight: 600;
   }
 
-  .col2 button img{
+  .col2 button img {
     width: 25px;
   }
 
@@ -1562,62 +1577,63 @@ footer {
     font-size: 20px;
   }
 
-  .col2 span p{
+  .col2 span p {
     font-size: 15px;
   }
 
-  .box1{
+  .box1 {
     gap: 20px;
   }
-  
-  .picture img{
+
+  .picture img {
     width: 120px;
   }
 
-  .detail h6{
+  .detail h6 {
     font-size: 15px;
   }
 
-  .detail p{
+  .detail p {
     font-size: 13px;
   }
 
-  .detail span h5{
+  .detail span h5 {
     font-size: 13px;
   }
 
-  .detail span input{
+  .detail span input {
     font-size: 13px;
     text-align: left;
     width: 20px;
     padding: 2px 5px;
   }
 
-  h4{
+  h4 {
     font-size: 25px;
   }
 
-  .detail a{
+  .detail a {
     font-size: 12px;
   }
 
-  .box2{
-    gap: 5PX;
+  .box2 {
+    gap: 5px;
   }
 
-  .box2 h1{
+  .box2 h1 {
     font-size: 15px;
   }
 
-  .box2 h3,p{
+  .box2 h3,
+  p {
     font-size: 13px;
   }
 
-  .container button{
+  .container button {
     font-size: 15px;
   }
 
-  .container-sign{
+  .container-sign {
     width: 50%;
   }
 }
@@ -1760,7 +1776,7 @@ footer {
     flex-direction: column;
   }
 
-  .col1{
+  .col1 {
     width: 100%;
   }
 
@@ -1808,7 +1824,7 @@ footer {
     font-size: 18px;
   }
 
-  col2 span p{
+  col2 span p {
     font-size: 15px;
   }
 
@@ -1823,77 +1839,89 @@ footer {
     font-size: 10px;
   }
 
-  .cart{
+  .cart {
     flex-direction: column;
   }
 
-  .box1{
+  .box1 {
     width: 100%;
   }
 
-  .picture img{
+  .picture img {
     width: 125px;
     height: 150px;
     object-fit: cover;
   }
 
-  .container button{
+  .container button {
     font-size: 18px;
   }
 
-  .box2{
+  .box2 {
     width: 100%;
   }
 
-  .box2 h1{
+  .box2 h1 {
     text-align: center;
     font-size: 18px;
   }
 
-  .detail{
+  .detail {
     gap: 5px;
   }
 
-  .detail p{
+  .detail p {
     font-size: 12px;
   }
 
- .detail .price{
+  .detail .price {
     font-size: 12px;
   }
 
-  .container button{
+  .container button {
     font-size: 13px;
   }
 
-  .container-sign{
-    width: 75%;
+  .container-sign {
+    width: 70%;
   }
 
-  .login h1{
+  .formerror{
+    font-size: .8rem;
+    font-weight: 500;
+  }
+
+  .login {
+    width: 100%;
+  }
+
+  .login h1 {
     font-size: 25px;
   }
 
-  .btn2{
-    font-size: 18px;
-    padding: 10px 0;
+  .sign-up-sucess{
+    text-align: center;
+    margin-inline: 10px;
+    line-height: 30px;
   }
 
+  .btn2 {
+    font-size: 18px;
+    padding: 5px 0;
+  }
 
-   h4{
+  h4 {
     font-size: 16px;
     padding: 0;
     margin: 20px 0;
   }
 
-  .women-wear-list{
+  .women-wear-list {
     gap: 10px;
     margin: 20px 0;
   }
 
-  .women-category{
+  .women-category {
     width: 40%;
   }
-
-
 }
