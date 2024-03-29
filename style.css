@@ -534,8 +534,12 @@ h2 {
 .deal-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 15px 0;
   justify-content: space-between;
+}
+
+.testimonials{
+  width: 90%;
 }
 
 .deal-sublist {
@@ -836,9 +840,10 @@ select:focus {
 }
 
 .testimonials .test{
-  font-size: 25px;
-  /* font-weight: 600; */
+  font-size: 35px;
+  font-weight: 900;
   text-align: center;
+  color: #2295e8;
 }
 
 .upper {
@@ -977,20 +982,53 @@ select:focus {
 .signup-form {
   display: flex;
   height: auto;
-  width: 100%;
-  justify-content: center;
+  width: 80%;
+  justify-content: space-around;
   align-items: center;
-  flex-direction: column;
+  margin: auto;
+  gap: 10px;
+  /* flex-direction: column; */
   /* background-color:#2a60ff ; */
   /* background-image: url(https://img.freepik.com/free-photo/wooden-shelf-tropical-forest-product-presentation-dark-green-background_41470-5139.jpg?w=740&t=st=1708430495~exp=1708431095~hmac=6aa7ee07da6a0afdf615db48de5f8b06a3a9bab814798ead437eaf76f1e75247);
     background-repeat: no-repeat;
     background-size: cover; */
 }
 
-.sign-up-sucess {
+.signup-form .left{
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.signup-form .left h1{
+  font-size: 25px;
+}
+
+.signup-form .left span{
+  color: #2295e8;
+  font-weight: 900;
+}
+
+.signup-form .left p{
+  font-size: 25px;
+}
+
+.success{
+  width: 100%;
   margin: 10px 0;
+  text-align: center;
+}
+
+.sign-up-sucess {
+  text-align: center;
   font-size: 2rem;
   font-weight: 700;
+}
+
+.sign-up-sucess span{
+  color: #2295e8;
+  font-weight: 900;
 }
 
 .container-sign {
@@ -1000,7 +1038,7 @@ select:focus {
   justify-content: center;
   border: 1px solid black;
   border-radius: 10px;
-  width: 25%;
+  width: 35%;
   padding: 20px 20px;
   margin: 10px 0;
   overflow: hidden;
@@ -1388,18 +1426,18 @@ footer {
   header nav .main .humburger li:hover {
     text-decoration: none;
   }
-
+/* 
   header nav .main .humburger li:hover a {
     color: #2a60ff;
-  }
+  } */
 
   header nav .main .humburger .active {
     text-decoration: none;
   }
-
+/* 
   header nav .main .humburger .active a {
     color: #2a60ff;
-  }
+  } */
 
   .menu {
     z-index: 2;
@@ -1619,6 +1657,22 @@ footer {
     font-weight: 400;
   }
 
+  .signup-form .left{
+    width: 40%;
+  }
+
+  .container-sign{
+    width: 45%;
+  }
+
+  .signup-form .left h1{
+    font-size: 20px;
+  }
+
+  .signup-form .left p{
+    font-size: 20px;
+  }
+
 }
 
 @media only screen and (max-width: 700px) {
@@ -1757,8 +1811,9 @@ footer {
   }
 
   .container-sign {
-    width: 50%;
+    padding: 10px 5px;
   }
+
 
   .testimonials .test{
     font-size: 20px;
@@ -1776,6 +1831,11 @@ footer {
   .testimonials .inner-div .review .description{
     padding: 4px;
   }
+
+  .signup-form{
+    width: 90%;
+  }
+
 
 }
 
@@ -1844,21 +1904,33 @@ footer {
   }
 
   .brand-list {
-    justify-content: flex-start;
+    justify-content: space-around;
     margin: 0px;
   }
 
   .brand-list img {
-    width: 90px;
+    width: 120px;
     border-radius: 5px;
   }
 
+  #section{
+    width: 90%;
+  }
+
+
   #category {
+    width: 90%;
     margin: 30px auto;
   }
 
+
+  .category-list{
+    gap: 20px 8px;
+    justify-content: space-evenly;
+  }
+
   .category-list img {
-    width: 125px;
+    width: 120px;
   }
 
   .category-list .sublist p {
@@ -1866,6 +1938,7 @@ footer {
   }
 
   .deals {
+    width: 90%;
     margin: 30px auto;
   }
 
@@ -1882,7 +1955,7 @@ footer {
   }
 
   .deal-sublist {
-    width: 120px;
+    width: 110px;
     padding: 10px;
   }
 
@@ -2024,7 +2097,8 @@ footer {
   }
 
   .container-sign {
-    width: 70%;
+    width: 100%;
+    padding: 20px;
   }
 
   .formerror{
@@ -2041,6 +2115,7 @@ footer {
   }
 
   .sign-up-sucess{
+    font-size: 18px;
     text-align: center;
     margin-inline: 10px;
     line-height: 30px;
@@ -2064,6 +2139,14 @@ footer {
 
   .women-category {
     width: 40%;
+  }
+
+  .deal-list{
+    justify-content: space-evenly;
+  }
+
+  .testimonials{
+    width: 90%;
   }
 
   .testimonials h1{
@@ -2117,6 +2200,27 @@ footer {
   .testimonials h1{
     font-size: 35px;
     margin: 10px 0;
+  }
+
+  .signup-form{
+    width: 80%;
+    flex-direction: column;
+  }
+
+  .signup-form .left{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .signup-form .left h1{
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .signup-form .left p{
+    font-size: 18px;
+    font-weight: 700;
   }
 
 }

@@ -131,7 +131,7 @@ function validateloginform(e) {
     
     const sucess = document.querySelector('.sign-up-sucess');
     if(returnal == true){
-        sucess.innerHTML ="Welcome back to Speedy! " +name;
+        sucess.innerHTML ="Welcome back to <span>SPEEDY !</span> " +name ;
         returnal = false;
         
     }
@@ -143,4 +143,28 @@ function validateloginform(e) {
     // Return false to prevent the form from being submitted without validation
     // return returnal;
 }
+
+
+const login = document.querySelector(".log-link");
+const register = document.querySelector(".reg-link");
+const tagline = document.querySelector(".line1");
+const taline1 = document.querySelector(".line2");
+const logo = document.querySelector(".logo");
+
+
+login.addEventListener('click',()=>{
+    // logo.innerHTML = "SPEEDY !";
+    tagline.innerHTML = "Access your account to manage settings, view orders, and more <span>SPEEDY !</span>";
+    taline1.innerHTML = "Log In to Your Account!"
+    console.log(logo);
+})
+
+
+register.addEventListener('click',()=>{
+    tagline.innerHTML = "Unlock exclusive features and benefits by signing up with <span>SPEEDY !</span>";
+    taline1.innerHTML = "Join Us Today!"
+    console.log(logo);
+})
+
+
 
