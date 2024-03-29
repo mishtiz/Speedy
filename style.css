@@ -750,6 +750,97 @@ select:focus {
   gap: 10px;
 }
 
+.testimonials{
+  width: 80%;
+  margin: auto;
+}
+
+.testimonials h1{
+  font-size: 40px;
+  font-weight: 750;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.testimonials .inner-div{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin: 40px 0;
+}
+
+.testimonials .inner-div .review{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 1s ease;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+  /* gap: 20px; */
+}
+
+.testimonials .inner-div .review:hover{
+  transform: translateY(-10px);
+}
+
+.testimonials .inner-div .review .description{
+  display: flex;
+  background-color: whitesmoke;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+
+.testimonials .inner-div .review .description img{
+  width: 50px;
+}
+
+.testimonials .inner-div .review .description span{
+  display: flex;
+}
+
+.testimonials .inner-div .review .description span img{
+  width: 25px;
+}
+
+.testimonials .inner-div .review .description p{
+  font-size: 15px;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.testimonials .inner-div .review .image{
+  width: 100%;
+  background-color: #2295e8;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.testimonials .inner-div .review .image p{
+  font-size: 20px;
+  margin: 5px 0;
+  color: white;
+  font-weight: 600;
+}
+
+.testimonials .inner-div .review .image img{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  object-position: top;
+  border: 5px solid white;
+  border-radius: 50%;
+}
+
+.testimonials .test{
+  font-size: 25px;
+  /* font-weight: 600; */
+  text-align: center;
+}
+
 .upper {
   width: 100%;
   height: fit-content;
@@ -1496,6 +1587,38 @@ footer {
   h4 {
     font-size: 28px;
   }
+
+  .testimonials .inner-div{
+    gap: 20px;
+  }
+
+  .testimonials .inner-div .review .description{
+    padding: 8px;
+  }
+
+  .testimonials .inner-div .review .description img{
+    width: 35px;
+  }
+
+  .testimonials .inner-div .review .description p{
+    font-size: 14px;
+  }
+
+  .testimonials .inner-div .review .description span img{
+    width: 18px;
+  }
+
+  .testimonials .inner-div .review .image img{
+    width: 70px;
+    height: 70px;
+  }
+
+  .testimonials .inner-div .review .image p{
+    font-size: 18px;
+    margin: 3px 0;
+    font-weight: 400;
+  }
+
 }
 
 @media only screen and (max-width: 700px) {
@@ -1636,6 +1759,24 @@ footer {
   .container-sign {
     width: 50%;
   }
+
+  .testimonials .test{
+    font-size: 20px;
+  }
+
+  .testimonials h1{
+    font-size: 35px;
+  }
+
+  .testimonials .inner-div .review .description p{
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .testimonials .inner-div .review .description{
+    padding: 4px;
+  }
+
 }
 
 @media only screen and (max-width: 550px) {
@@ -1924,4 +2065,58 @@ footer {
   .women-category {
     width: 40%;
   }
+
+  .testimonials h1{
+    font-size: 25px;
+  }
+
+  .testimonials .inner-div{
+    flex-direction: column;
+    margin: 30px 0;
+    gap: 40px;
+  }
+
+  .testimonials .inner-div .review{
+    width: 90%;
+    margin: auto;
+  }
+
+  .testimonials .inner-div .review .description{
+    padding: 10px 20px;
+  }
+
+  .testimonials .inner-div .review .description p{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 0;
+    opacity:  0.5;
+  }
+
+  .testimonials .inner-div .review .description span img{
+    width: 25px;
+  }
+
+  .testimonials .inner-div .review .description img{
+    width: 40px;
+  }
+
+  .testimonials .inner-div .review .image{
+    padding: 18px 0;
+  }
+
+  .testimonials .inner-div .review .image img{
+    width: 100px;
+    height: 100px;
+    border: 3px solid white;
+  }
+
+  /* .testimonials .test{
+    font-size: 20px;
+  } */
+
+  .testimonials h1{
+    font-size: 35px;
+    margin: 10px 0;
+  }
+
 }
