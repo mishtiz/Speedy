@@ -7,14 +7,7 @@
     <title>Speedy.com</title>
     <link rel="icon" href="images/S.png">
     <link rel="stylesheet" href="style.css">
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-        rel="stylesheet"> -->
+
 </head>
 
 <body>
@@ -24,7 +17,7 @@
                 <!-- <img src="images/speedy.jpg" alt=""> -->
                 <img src="images/LOGO.png" alt="">
                 <ul class="humburger">
-                    <li class="active"> <a href="index.html">Home</a></li>
+                    <li> <a href="index.html">Home</a></li>
                     <li><a href="index-men.html">Men</a></li>
                     <li><a href="index-women.html">Women</a></li>
                     <li><a href="index-beauty.html">Beauty & Living</a></li>
@@ -35,11 +28,17 @@
                     <li><a href="index-offer.html">Offers</a></li>
                 </ul>
                 <div class="btn">
-                    <button type="submit">Sign up</button>
+                    <a href="sign.html">
+                        <button type="submit">Sign up</button>
+                    </a>
                     <!-- <button type="submit">Log-in</button> -->
-                    <button type="submit">Cart</button>
-                    <img src="signin.svg" alt="">
-                    <img src="cart.svg" alt="">
+                    <a href="cart.html">
+                        <button type="submit">Cart</button>
+                    </a>
+                    <a href="sign.html">
+                        <img src="signin.svg" alt="">
+                    </a>
+                    <a href="cart.html"><img src="cart.svg" alt=""></a>
                     <img class="menu" src="menu.svg" alt="">
                 </div>
             </div>
@@ -71,12 +70,53 @@
         </div>
     </header>
 
-    <section>
-        <div class="t-shirts">
-            <h4>ZARA Collection</h4>
-            <div class="tshirt-category">
-                
+    <section class="about-us">
+        <div class="about">
+            <h1>About us / <span>Speedy</span></h1>
+            <div class="inner-about">
+                <h3>Introduction</h3>
+                <p>
+                    Myntra is a one stop shop for all your fashion and lifestyle needs. Being India's largest e-commerce
+                    store for fashion and lifestyle products, Myntra aims at providing a hassle free and enjoyable
+                    shopping experience to shoppers across the country with the widest range of brands and products on
+                    its portal. The brand is making a conscious effort to bring the power of fashion to shoppers with an
+                    array of the latest and trendiest products available in the country.</p>
             </div>
+
+            <div class="inner-about">
+                <h3>Value proposition</h3>
+                <p>
+                    Myntra's value proposition revolves around giving consumers the power and ease of purchasing fashion
+                    and lifestyle products online. Offerings such as the largest in-season product catalogue, 100%
+                    authentic products, cash on delivery and 30 day return policy make Myntra, the preferred shopping
+                    destination in the country. To make online shopping easier for you, a dedicated customer connect
+                    team is on standby to answer your queries 24x7.</p>
+            </div>
+
+            <div class="inner-about">
+                <h3>Brands</h3>
+                <p>
+                    Myntra understands its shoppers' needs and caters to them with choice of apparel, accessories,
+                    cosmetics and footwear from over 500 leading Indian and international brands. Prominent brands
+                    include Adidas, Nike, Puma, Catwalk, Inc 5, United Colors of Benetton, FCUK, Timberland, Avirate,
+                    FabIndia and Biba to name a few. You can also shop from some recently introduced labels such as -
+                    Roadster, Sher Singh, Dressberry, Kook N Keech and ETC.</p>
+            </div>
+
+            <div class="inner-about">
+                <h3>Recognitions</h3>
+                <div class="list">
+                    <ul>
+                        <li>Awarded <span>'Fashion eRetailer of the Year 2013'</span> by Franchise India – Indian
+                            eRetail Awards</li>
+                        <li>Awarded <span>'Best E-commerce Website for 2012'</span> by IAMAI – India Digital Awards</li>
+                        <li>Awarded <span>'Images Most Admired Retailer of the Year: Non–Store Retail'</span> for 2012
+                            by Images Group</li>
+                        <li>Awarded <span>'Best E-commerce Partner of the year 2011-12'</span> by Puma India</li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -153,11 +193,24 @@
                 humburger.style.top = "-200%";
                 check = 0;
             }
-            // humburger.classList.toggle('active');
         })
+
+        let primary_image = document.querySelector('#main-image')
+        let secondary_image = document.querySelectorAll('#secondary-image');
+
+        secondary_image.forEach((e) => {
+            console.log(e);
+            e.addEventListener('click', () => {
+                primary_image.src = e.src;
+            })
+
+        })
+
+        function goto(e) {
+            window.open(e.value)
+        }
     </script>
 
-    <script src="zara.js"></script>
 </body>
 
 </html>

@@ -846,6 +846,47 @@ select:focus {
   color: #2295e8;
 }
 
+.about-us{
+  width: 70%;
+  margin: auto;
+}
+
+.about h1{
+  font-size: 35px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.about span{
+  color: #2a60ff;
+  font-weight: 800;
+}
+
+.inner-about{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 40px 0;
+}
+
+.inner-about h3{
+  font-size: 22px;
+}
+
+.inner-about p{
+  opacity: .6;
+}
+
+.inner-about .list li{
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.inner-about .list ul{
+  padding-left: 40px;
+  line-height: 25px;
+}
+
 .upper {
   width: 100%;
   height: fit-content;
@@ -1680,6 +1721,14 @@ footer {
     width: 150px;
   }
 
+  .inner-about h3{
+    font-size: 20px;
+  }
+
+  .inner-about .list li{
+    font-size: 10px;
+  }
+
   .login {
     width: 90%;
   }
@@ -2221,6 +2270,35 @@ footer {
   .signup-form .left p{
     font-size: 18px;
     font-weight: 700;
+  }
+
+  .about-us{
+    width: 80%;
+  }
+
+  .about h1{
+    font-size: 22px;
+  }
+
+  .inner-about{
+    margin: 20px 0;
+  }
+
+  .inner-about h3{
+    font-size: 15px;
+  }
+
+  .inner-about p{
+    font-size: 10px;
+  }
+
+  .inner-about .list ul{
+    line-height: 18px;
+    padding-left: 30px;
+  }
+
+  .inner-about .list li{
+    margin: 5px 0;
   }
 
 }
