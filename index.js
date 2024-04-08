@@ -3,6 +3,7 @@ let first = document.querySelector('.first')
 let second = document.querySelector('.second')
 let third = document.querySelector('.third')
 let fourth = document.querySelector('.forth')
+let fifth = document.querySelector('.fifth')
 let image = document.querySelectorAll('.image');
 let previous = document.querySelector('.pre')
 let next = document.querySelector('.next')
@@ -10,15 +11,16 @@ let slidernumber = 1;
 let length = image.length;
 
 
+console.log(image);
 
 setInterval(()=>{
     if(slidernumber<length){
         slide[slidernumber].style.transform = `translateX(-${slidernumber*100}%)`;
+        console.log(slidernumber);
         slidernumber++;
     }
     else
     {
-        console.log(slidernumber);
         slide[slidernumber-1].style.transform = `translateX(0%)`;
         fourth.style.transform = `translateX(0%)`;
         third.style.transform = `translateX(0%)`;
@@ -28,35 +30,7 @@ setInterval(()=>{
     }
 },4000)
 
-// next.addEventListener('click',()=>{
-//     if(slidernumber<length){
-//         slide[slidernumber].style.transform = `translateX(-${slidernumber*100}%)`;
-//         slidernumber++;
-//     }
-//     else{
-//         slide[slidernumber-1].style.transform = `translateX(0%)`;
-//         third.style.transform = `translateX(0%)`;
-//         second.style.transform = `translateX(0%)`;
-//         first.style.transform = `translateX(0%)`;
-//         slidernumber = 1;
-//     }
-// })
 
-// previous.addEventListener('click',()=>{
-//     if(slidernumber>1){
-//         console.log(slidernumber);
-//         slide[slidernumber-1].style.transform = `translateX(-${(slidernumber-2)*100}%)`;
-//         slidernumber--;
-//     }
-    // else{
-    //     slide[slidernumber].style.transform = `translateX(-${(length-1)*100}%)`;
-    //     first.style.transform = `translateX(-100%)`;
-    //     second.style.transform = `translateX(-200%)`;
-    //     third.style.transform = `translateX(-300%)`;
-    //     slide[4].style.transform = `translateX(-400%)`;
-    //     slidernumber = length;
-    // }
-// })
 
 
 let humburger = document.querySelector('.humburger');
@@ -74,5 +48,21 @@ menu.addEventListener("click",()=>{
     }
     // humburger.classList.toggle('active');
 })
+
+
+const show = document.querySelectorAll(".faq");
+
+show.forEach((e)=>{
+
+    e.addEventListener('click',()=>{
+        if(!e.classList.contains("active")){
+            e.classList.add("active");
+        }else{
+            e.classList.remove("active");
+        }
+    })
+})
+
+
 
 
