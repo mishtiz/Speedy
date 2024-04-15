@@ -72,12 +72,19 @@
     </header>
 
     <section>
-        <div class="t-shirts">
-            <h4>ZARA Collection</h4>
-            <div class="tshirt-category">
+        <div class="single-product">
+            <div class="row">
                 
             </div>
         </div>
+    </section>
+
+    <section>
+        <div class="t-shirts">
+            <h4>Similar Products</h4>
+            <div class="tshirt-category">
+                
+            </div>
     </section>
 
     <footer>
@@ -153,11 +160,24 @@
                 humburger.style.top = "-200%";
                 check = 0;
             }
-            // humburger.classList.toggle('active');
         })
-    </script>
 
-    <script src="zara.js"></script>
+        let primary_image = document.querySelector('#main-image')
+        let secondary_image = document.querySelectorAll('#secondary-image');
+
+        secondary_image.forEach((e) => {
+            console.log(e);
+            e.addEventListener('click', () => {
+                primary_image.src = e.src;
+            })
+
+        })
+
+        function goto(e) {
+            window.open(e.value)
+        }
+    </script>
+    <script src="hm-product5.js"></script>
 </body>
 
 </html>

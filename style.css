@@ -816,21 +816,21 @@ select:focus {
   text-align: center;
 }
 
-.testimonials .inner-div .review .image{
+.testimonials .inner-div .review .image1{
   width: 100%;
   background-color: #2295e8;
   padding: 10px 0;
   text-align: center;
 }
 
-.testimonials .inner-div .review .image p{
+.testimonials .inner-div .review .image1 p{
   font-size: 20px;
   margin: 5px 0;
   color: white;
   font-weight: 600;
 }
 
-.testimonials .inner-div .review .image img{
+.testimonials .inner-div .review .image1 img{
   width: 100px;
   height: 100px;
   object-fit: cover;
@@ -844,6 +844,47 @@ select:focus {
   font-weight: 900;
   text-align: center;
   color: #2295e8;
+}
+
+.about-us{
+  width: 70%;
+  margin: auto;
+}
+
+.about h1{
+  font-size: 35px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.about span{
+  color: #2a60ff;
+  font-weight: 800;
+}
+
+.inner-about{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 40px 0;
+}
+
+.inner-about h3{
+  font-size: 22px;
+}
+
+.inner-about p{
+  opacity: .6;
+}
+
+.inner-about .list li{
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.inner-about .list ul{
+  padding-left: 40px;
+  line-height: 25px;
 }
 
 .upper {
@@ -989,7 +1030,7 @@ select:focus {
   gap: 10px;
   /* flex-direction: column; */
   /* background-color:#2a60ff ; */
-  /* background-image: url(https://img.freepik.com/free-photo/wooden-shelf-tropical-forest-product-presentation-dark-green-background_41470-5139.jpg?w=740&t=st=1708430495~exp=1708431095~hmac=6aa7ee07da6a0afdf615db48de5f8b06a3a9bab814798ead437eaf76f1e75247);
+  /* background-image1: url(https://img.freepik.com/free-photo/wooden-shelf-tropical-forest-product-presentation-dark-green-background_41470-5139.jpg?w=740&t=st=1708430495~exp=1708431095~hmac=6aa7ee07da6a0afdf615db48de5f8b06a3a9bab814798ead437eaf76f1e75247);
     background-repeat: no-repeat;
     background-size: cover; */
 }
@@ -1281,6 +1322,63 @@ h4 {
 .top {
   object-position: top;
 }
+
+/* Faq Section */
+
+.faqs{
+  width: 80%;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* gap: 20px; */
+}
+
+.faqs h3{
+  font-size: 40px;
+  margin: 20px 0;
+  font-weight: 800;
+}
+
+.faq{
+  display: flex;
+  flex-direction: column;
+  margin: 8px 0;
+  width: 100%;
+  cursor: pointer;
+  /* gap: 10px; */
+}
+
+.faq>.faq-question{
+  background-color: #2a60ff;
+  color: white;
+  padding: 20px 15px;
+  border-radius: 5px;
+  font-size: 25px;
+}
+
+.faq>.faq-answer{
+  display: none;
+  border-radius: 0 0 5px 5px;
+  padding: 10px 15px;
+  background-color:aliceblue;
+  /* color: white; */
+  /* color: rgba(0, 0, 0, 0.7); */
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+
+.faq.active  .faq-answer{
+  display: block;
+}
+
+.faq.active .faq-question{
+  border-radius: 5px 5px 0 0;
+}
+
 
 /* women section end */
 
@@ -1646,12 +1744,12 @@ footer {
     width: 18px;
   }
 
-  .testimonials .inner-div .review .image img{
+  .testimonials .inner-div .review .image1 img{
     width: 70px;
     height: 70px;
   }
 
-  .testimonials .inner-div .review .image p{
+  .testimonials .inner-div .review .image1 p{
     font-size: 18px;
     margin: 3px 0;
     font-weight: 400;
@@ -1673,11 +1771,30 @@ footer {
     font-size: 20px;
   }
 
+  .faq> .faq-question{
+    font-size: 20px;
+    padding: 15px;
+    font-weight: 600;
+  }
+
+  .faq> .faq-answer{
+    font-size: 18px;
+    padding: 15px;
+  }
+
 }
 
 @media only screen and (max-width: 700px) {
   .mens-category {
     width: 150px;
+  }
+
+  .inner-about h3{
+    font-size: 20px;
+  }
+
+  .inner-about .list li{
+    font-size: 10px;
   }
 
   .login {
@@ -2183,11 +2300,11 @@ footer {
     width: 40px;
   }
 
-  .testimonials .inner-div .review .image{
+  .testimonials .inner-div .review .image1{
     padding: 18px 0;
   }
 
-  .testimonials .inner-div .review .image img{
+  .testimonials .inner-div .review .image1 img{
     width: 100px;
     height: 100px;
     border: 3px solid white;
@@ -2221,6 +2338,52 @@ footer {
   .signup-form .left p{
     font-size: 18px;
     font-weight: 700;
+  }
+
+  .about-us{
+    width: 80%;
+  }
+
+  .about h1{
+    font-size: 22px;
+  }
+
+  .inner-about{
+    margin: 20px 0;
+  }
+
+  .inner-about h3{
+    font-size: 15px;
+  }
+
+  .inner-about p{
+    font-size: 10px;
+  }
+
+  .inner-about .list ul{
+    line-height: 18px;
+    padding-left: 30px;
+  }
+
+  .inner-about .list li{
+    margin: 5px 0;
+  }
+
+  .faqs{
+    width: 90%;
+  }
+
+  .faqs h3{
+    font-size: 35px;
+  }
+
+  .faq> .faq-question{
+    /* padding: 18px; */
+    font-size: 18px;
+  }
+
+  .faq> .faq-answer{
+    font-size: 15px;
   }
 
 }
